@@ -14,8 +14,69 @@ using MaterialSkin.Controls;
 
 namespace Client_Reset
 {
+    
     public partial class Form1 : MaterialForm
     {
+        //Get System Drive
+        static string sysDisk = System.IO.Path.GetPathRoot(Environment.GetFolderPath(Environment.SpecialFolder.System));
+        //Get System User
+        static string user = Environment.UserName;
+
+        //BATTLE.NET Directories
+        string BN = sysDisk + @"ProgramData\Battle.net";
+        string BE = sysDisk + @"ProgramData\Blizzard Entertainment";
+        string AppDataBN = sysDisk + @"Users\" + user + @"\AppData\Local\Battle.net\Cache";
+        string AppDataBNL = sysDisk + @"Users\" + user + @"\AppData\Local\Battle.net\Logs";
+
+        //BETHESDA LAUNCHER Directories
+        string BL = sysDisk + @"Users\" + user + @"\AppData\Local\Bethesda.net Launcher\cache";
+        string BLL = sysDisk + @"Program Files (x86)\Bethesda.net Launcher\logs";
+
+        //EPIC GAMES LAUNCER Directories
+        string EG = sysDisk + @"ProgramData\Epic\EpicGamesLauncher\Data\EMS\EpicGamesLauncher";
+        string EGCC = sysDisk + @"ProgramData\Epic\EpicGamesLauncher\Data\ContentCache";
+        string EGL = sysDisk + @"Users\" + user + @"\AppData\Local\EpicGamesLauncher\Saved\Logs";
+        string EGWEB = sysDisk + @"Users\" + user + @"\AppData\Local\EpicGamesLauncher\Saved\webcache_4147";
+
+        //GOG GALAXY Directories
+        string GOGL = sysDisk + @"ProgramData\GOG.com\Galaxy\logs";
+        string GOGWEB = sysDisk + @"ProgramData\GOG.com\Galaxy\webcache";
+
+        //Origin Directories
+        string AC = sysDisk + @"ProgramData\Origin\AchievementCache";
+        string CC = sysDisk + @"ProgramData\Origin\CatalogCache";
+        string CBC = sysDisk + @"ProgramData\Origin\CustomBoxartCache";
+        string DC = sysDisk + @"ProgramData\Origin\DownloadCache";
+        string EC = sysDisk + @"ProgramData\Origin\EntitlementCache";
+        string IGOC = sysDisk + @"ProgramData\Origin\IGOCache";
+        string Logs1 = sysDisk + @"ProgramData\Origin\Logs";
+        string NOCC = sysDisk + @"ProgramData\Origin\NonOriginContentCache";
+        string temp1 = sysDisk + @"temp\";
+        string temp2 = sysDisk + @"Windows\Temp\";
+        string temp3 = sysDisk + @"Users\" + user + @"\AppData\Local\Temp";
+        string CC2 = sysDisk + @"Users\" + user + @"\AppData\Roaming\Origin\CatalogCache";
+        string CS = sysDisk + @"Users\" + user + @"\AppData\Roaming\Origin\Cloud Saves";
+        string CT = sysDisk + @"Users\" + user + @"\AppData\Roaming\Origin\CommonTitles";
+        string CC3 = sysDisk + @"Users\" + user + @"\AppData\Roaming\Origin\ConsolidatedCache";
+        string NC = sysDisk + @"Users\" + user + @"\AppData\Roaming\Origin\NucleusCache";
+        string WU = sysDisk + @"Users\" + user + @"\AppData\Roaming\Origin\Widget Updates";
+        string origin = sysDisk + @"Users\" + user + @"\AppData\Local\Origin";
+
+        //STEAM Directories
+        string SL = sysDisk + @"Program Files (x86)\Steam\logs";
+        string SDC = sysDisk + @"Program Files (x86)\Steam\depotcache";
+        string SAC = sysDisk + @"Program Files (x86)\Steam\config\avatarcache";
+        string SWEB = sysDisk + @"Users\" + user + @"AppData\Local\Steam\htmlcache";
+
+        //UBISOFT CONNECT Directories
+        string UCL = sysDisk + @"Program Files (x86)\Ubisoft\Ubisoft Game Launcher\logs";
+        string UCA = sysDisk + @"Program Files (x86)\Ubisoft\Ubisoft Game Launcher\cache\assets";
+        string UCAV = sysDisk + @"Program Files (x86)\Ubisoft\Ubisoft Game Launcher\cache\avatars";
+        string UCWEB = sysDisk + @"Program Files (x86)\Ubisoft\Ubisoft Game Launcher\cache\http2";
+
+        //WINDOWS STORE
+        //None call WRESET.exe
+
         MaterialSkinManager ThemeManager = MaterialSkinManager.Instance;
         [DllImport("gdi32.dll")]
         static extern int GetDeviceCaps(IntPtr hdc, int nIndex);
@@ -50,9 +111,29 @@ namespace Client_Reset
 
             
         }
+        private void WSClean()
+        {
+            materialLabel8.Visible = true;
+            pictureBox16.Visible = true;
+            materialLabel8.Text = "Stage 1 - 4";
+            System.Diagnostics.Process.Start(Application.StartupPath + @"\data\scripts\INET.bat");
+            wait(5);
+            materialLabel8.Text = "Stage 2 - 4";
+            System.Diagnostics.Process.Start(Application.StartupPath + @"\data\scripts\TASKKILLER.bat");
+            wait(10);
+            materialLabel8.Text = "Stage 3 - 4";
+            System.Diagnostics.Process.Start(Application.StartupPath + @"\data\scripts\USLESSTASK.bat");
+            wait(5);
+            materialLabel8.Text = "Stage 4 - 4";
+            System.Diagnostics.Process.Start(Application.StartupPath + @"\data\scripts\WSReset.exe");
+            wait(10);
+            materialLabel8.Text = "Reset Complete";
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            materialLabel1.Text = AppDataBN;
+            materialLabel1.Visible = true;
             if (Settings.Default.themeMode == "Light")
             {
                 ThemeManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -150,7 +231,8 @@ namespace Client_Reset
 
         private void materialButton9_Click(object sender, EventArgs e)
         {
-            
+            WSClean();
         }
+
     }
 }

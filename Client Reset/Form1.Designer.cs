@@ -31,7 +31,6 @@ namespace Client_Reset
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialDrawer1 = new MaterialSkin.Controls.MaterialDrawer();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -84,6 +83,8 @@ namespace Client_Reset
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.materialButton10 = new MaterialSkin.Controls.MaterialButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.materialCard1.SuspendLayout();
@@ -119,31 +120,6 @@ namespace Client_Reset
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
-            // materialButton1
-            // 
-            this.materialButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialButton1.AutoSize = false;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.BackColor = System.Drawing.Color.Transparent;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Image = global::Client_Reset.Properties.Resources._3688431_api_config_configuration_machine_wrench_icon;
-            this.materialButton1.Location = new System.Drawing.Point(509, -7);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.Size = new System.Drawing.Size(91, 64);
-            this.materialButton1.TabIndex = 0;
-            this.materialButton1.Text = "Settings";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton1.UseAccentColor = true;
-            this.materialButton1.UseCompatibleTextRendering = true;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
-            // 
             // materialDrawer1
             // 
             this.materialDrawer1.AutoHide = true;
@@ -156,7 +132,7 @@ namespace Client_Reset
             this.materialDrawer1.IndicatorWidth = 0;
             this.materialDrawer1.IsOpen = false;
             this.materialDrawer1.Location = new System.Drawing.Point(-167, 78);
-            this.materialDrawer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialDrawer1.Margin = new System.Windows.Forms.Padding(2);
             this.materialDrawer1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDrawer1.Name = "materialDrawer1";
             this.materialDrawer1.ShowIconsWhenHidden = false;
@@ -178,7 +154,7 @@ namespace Client_Reset
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.Location = new System.Drawing.Point(2, 57);
-            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
@@ -190,9 +166,9 @@ namespace Client_Reset
             // 
             this.tabPage1.Controls.Add(this.materialCard1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(588, 464);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Battle.net";
@@ -207,11 +183,11 @@ namespace Client_Reset
             this.materialCard1.Controls.Add(this.pictureBox1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(67, 19);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard1.Location = new System.Drawing.Point(67, 21);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(9);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard1.Size = new System.Drawing.Size(458, 427);
             this.materialCard1.TabIndex = 0;
             // 
@@ -219,7 +195,7 @@ namespace Client_Reset
             // 
             this.pictureBox9.Image = global::Client_Reset.Properties.Resources.Barline_Loading_Images_1;
             this.pictureBox9.Location = new System.Drawing.Point(15, 293);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(431, 53);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -267,7 +243,7 @@ namespace Client_Reset
             // 
             this.pictureBox1.Image = global::Client_Reset.Properties.Resources.Battlenet_2021_icon;
             this.pictureBox1.Location = new System.Drawing.Point(166, 63);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -278,9 +254,9 @@ namespace Client_Reset
             // 
             this.tabPage2.Controls.Add(this.materialCard2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(588, 464);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bethesda Launcher";
@@ -296,10 +272,10 @@ namespace Client_Reset
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard2.Location = new System.Drawing.Point(67, 21);
-            this.materialCard2.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(9);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
-            this.materialCard2.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard2.Size = new System.Drawing.Size(458, 427);
             this.materialCard2.TabIndex = 1;
             // 
@@ -307,7 +283,7 @@ namespace Client_Reset
             // 
             this.pictureBox10.Image = global::Client_Reset.Properties.Resources.Barline_Loading_Images_1;
             this.pictureBox10.Location = new System.Drawing.Point(14, 293);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(431, 53);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -355,7 +331,7 @@ namespace Client_Reset
             // 
             this.pictureBox2.Image = global::Client_Reset.Properties.Resources.unnamed;
             this.pictureBox2.Location = new System.Drawing.Point(166, 63);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(120, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -366,9 +342,9 @@ namespace Client_Reset
             // 
             this.tabPage3.Controls.Add(this.materialCard3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage3.Size = new System.Drawing.Size(588, 464);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Epic Games";
@@ -384,10 +360,10 @@ namespace Client_Reset
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard3.Location = new System.Drawing.Point(67, 21);
-            this.materialCard3.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard3.Margin = new System.Windows.Forms.Padding(9);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
-            this.materialCard3.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard3.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard3.Size = new System.Drawing.Size(458, 427);
             this.materialCard3.TabIndex = 1;
             // 
@@ -395,7 +371,7 @@ namespace Client_Reset
             // 
             this.pictureBox11.Image = global::Client_Reset.Properties.Resources.Barline_Loading_Images_1;
             this.pictureBox11.Location = new System.Drawing.Point(14, 293);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(431, 53);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -443,7 +419,7 @@ namespace Client_Reset
             // 
             this.pictureBox3.Image = global::Client_Reset.Properties.Resources.Epic_Games_Node_xlarge_whitetext_blackback_epiclogo_504x512_1529964470588_503x512_ac795e81c54b27aaa2e196456dd307bfe4ca3ca4;
             this.pictureBox3.Location = new System.Drawing.Point(166, 63);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(120, 117);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -454,9 +430,9 @@ namespace Client_Reset
             // 
             this.tabPage4.Controls.Add(this.materialCard4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(588, 464);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "GOG Galaxy";
@@ -472,10 +448,10 @@ namespace Client_Reset
             this.materialCard4.Depth = 0;
             this.materialCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard4.Location = new System.Drawing.Point(67, 21);
-            this.materialCard4.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard4.Margin = new System.Windows.Forms.Padding(9);
             this.materialCard4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard4.Name = "materialCard4";
-            this.materialCard4.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard4.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard4.Size = new System.Drawing.Size(458, 427);
             this.materialCard4.TabIndex = 1;
             // 
@@ -483,7 +459,7 @@ namespace Client_Reset
             // 
             this.pictureBox12.Image = global::Client_Reset.Properties.Resources.Barline_Loading_Images_1;
             this.pictureBox12.Location = new System.Drawing.Point(14, 293);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(431, 53);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -531,7 +507,7 @@ namespace Client_Reset
             // 
             this.pictureBox4.Image = global::Client_Reset.Properties.Resources.gog_galaxy;
             this.pictureBox4.Location = new System.Drawing.Point(166, 63);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(120, 117);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -542,9 +518,9 @@ namespace Client_Reset
             // 
             this.tabPage5.Controls.Add(this.materialCard5);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage5.Size = new System.Drawing.Size(588, 464);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Origin";
@@ -560,10 +536,10 @@ namespace Client_Reset
             this.materialCard5.Depth = 0;
             this.materialCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard5.Location = new System.Drawing.Point(67, 21);
-            this.materialCard5.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard5.Margin = new System.Windows.Forms.Padding(9);
             this.materialCard5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard5.Name = "materialCard5";
-            this.materialCard5.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard5.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard5.Size = new System.Drawing.Size(458, 427);
             this.materialCard5.TabIndex = 1;
             // 
@@ -571,7 +547,7 @@ namespace Client_Reset
             // 
             this.pictureBox13.Image = global::Client_Reset.Properties.Resources.Barline_Loading_Images_1;
             this.pictureBox13.Location = new System.Drawing.Point(14, 293);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(431, 53);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -619,7 +595,7 @@ namespace Client_Reset
             // 
             this.pictureBox5.Image = global::Client_Reset.Properties.Resources.Origin_logo;
             this.pictureBox5.Location = new System.Drawing.Point(166, 63);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(120, 117);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -630,9 +606,9 @@ namespace Client_Reset
             // 
             this.tabPage6.Controls.Add(this.materialCard6);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage6.Size = new System.Drawing.Size(588, 464);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Steam";
@@ -648,10 +624,10 @@ namespace Client_Reset
             this.materialCard6.Depth = 0;
             this.materialCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard6.Location = new System.Drawing.Point(67, 21);
-            this.materialCard6.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard6.Margin = new System.Windows.Forms.Padding(9);
             this.materialCard6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard6.Name = "materialCard6";
-            this.materialCard6.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard6.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard6.Size = new System.Drawing.Size(458, 427);
             this.materialCard6.TabIndex = 1;
             // 
@@ -659,7 +635,7 @@ namespace Client_Reset
             // 
             this.pictureBox14.Image = global::Client_Reset.Properties.Resources.Barline_Loading_Images_1;
             this.pictureBox14.Location = new System.Drawing.Point(14, 293);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(431, 53);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -707,7 +683,7 @@ namespace Client_Reset
             // 
             this.pictureBox6.Image = global::Client_Reset.Properties.Resources.Steam_icon_logo_svg;
             this.pictureBox6.Location = new System.Drawing.Point(166, 63);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(120, 117);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -718,12 +694,12 @@ namespace Client_Reset
             // 
             this.tabPage7.Controls.Add(this.materialCard7);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage7.Size = new System.Drawing.Size(588, 464);
             this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "UPlay";
+            this.tabPage7.Text = "Ubisoft Connect";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // materialCard7
@@ -736,10 +712,10 @@ namespace Client_Reset
             this.materialCard7.Depth = 0;
             this.materialCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard7.Location = new System.Drawing.Point(67, 21);
-            this.materialCard7.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard7.Margin = new System.Windows.Forms.Padding(9);
             this.materialCard7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard7.Name = "materialCard7";
-            this.materialCard7.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard7.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard7.Size = new System.Drawing.Size(458, 427);
             this.materialCard7.TabIndex = 1;
             // 
@@ -747,7 +723,7 @@ namespace Client_Reset
             // 
             this.pictureBox15.Image = global::Client_Reset.Properties.Resources.Barline_Loading_Images_1;
             this.pictureBox15.Location = new System.Drawing.Point(14, 293);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(431, 53);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -795,7 +771,7 @@ namespace Client_Reset
             // 
             this.pictureBox7.Image = global::Client_Reset.Properties.Resources.Uplay_Logo;
             this.pictureBox7.Location = new System.Drawing.Point(166, 63);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(120, 117);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -806,9 +782,9 @@ namespace Client_Reset
             // 
             this.tabPage8.Controls.Add(this.materialCard8);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage8.Size = new System.Drawing.Size(588, 464);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Windows Store";
@@ -824,10 +800,10 @@ namespace Client_Reset
             this.materialCard8.Depth = 0;
             this.materialCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialCard8.Location = new System.Drawing.Point(67, 21);
-            this.materialCard8.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard8.Margin = new System.Windows.Forms.Padding(9);
             this.materialCard8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard8.Name = "materialCard8";
-            this.materialCard8.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.materialCard8.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard8.Size = new System.Drawing.Size(458, 427);
             this.materialCard8.TabIndex = 1;
             // 
@@ -835,7 +811,7 @@ namespace Client_Reset
             // 
             this.pictureBox16.Image = global::Client_Reset.Properties.Resources.Barline_Loading_Images_1;
             this.pictureBox16.Location = new System.Drawing.Point(14, 293);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(431, 53);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -884,7 +860,7 @@ namespace Client_Reset
             // 
             this.pictureBox8.Image = global::Client_Reset.Properties.Resources._1200px_Microsoft_Store_app_icon;
             this.pictureBox8.Location = new System.Drawing.Point(166, 63);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(120, 117);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -921,6 +897,31 @@ namespace Client_Reset
             this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // materialButton1
+            // 
+            this.materialButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.materialButton1.AutoSize = false;
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.BackColor = System.Drawing.Color.Transparent;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Image = global::Client_Reset.Properties.Resources._3688431_api_config_configuration_machine_wrench_icon;
+            this.materialButton1.Location = new System.Drawing.Point(509, -7);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.Size = new System.Drawing.Size(91, 64);
+            this.materialButton1.TabIndex = 0;
+            this.materialButton1.Text = "Settings";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton1.UseAccentColor = true;
+            this.materialButton1.UseCompatibleTextRendering = true;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -934,7 +935,7 @@ namespace Client_Reset
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_64;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(2, 57, 2, 2);
@@ -1033,6 +1034,7 @@ namespace Client_Reset
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Timer timer1;
         public MaterialSkin.Controls.MaterialButton materialButton10;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

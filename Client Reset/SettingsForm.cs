@@ -191,5 +191,11 @@ namespace Client_Reset
                 Properties.Settings.Default.Save();
             }
         }
+
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
+            changelog CL = new changelog();
+            CL.ShowDialog(this);
+        }
     }
     }
