@@ -78,12 +78,44 @@ namespace Client_Reset
             {
                 materialComboBox1.SelectedIndex = 5;
             }
-
+            if (Settings.Default.startingTab == "Battle.net")
+            {
+                materialComboBox2.SelectedIndex = 0;
+            }
+            if (Settings.Default.startingTab == "Bethesda Launcher")
+            {
+                materialComboBox2.SelectedIndex = 1;
+            }
+            if (Settings.Default.startingTab == "Epic Games")
+            {
+                materialComboBox2.SelectedIndex = 2;
+            }
+            if (Settings.Default.startingTab == "GOG Galaxy")
+            {
+                materialComboBox2.SelectedIndex = 3;
+            }
+            if (Settings.Default.startingTab == "Origin")
+            {
+                materialComboBox2.SelectedIndex = 4;
+            }
+            if (Settings.Default.startingTab == "Steam")
+            {
+                materialComboBox2.SelectedIndex = 5;
+            }
+            if (Settings.Default.startingTab == "Ubisoft Connect")
+            {
+                materialComboBox2.SelectedIndex = 6;
+            }
+            if (Settings.Default.startingTab == "Windows Store")
+            {
+                materialComboBox2.SelectedIndex = 7;
+            }
         }
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.Save();
+            this.Close();
         }
 
         private void materialButton3_Click(object sender, EventArgs e)
@@ -197,5 +229,63 @@ namespace Client_Reset
             changelog CL = new changelog();
             CL.ShowDialog(this);
         }
+
+        private void materialComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (materialComboBox2.SelectedIndex == 0)
+            {
+                
+                Properties.Settings.Default.startingTab = "Battle.net";
+                Properties.Settings.Default.Save();
+            }
+            if (materialComboBox2.SelectedIndex == 1)
+            {
+                
+                Properties.Settings.Default.startingTab = "Bethesda Launcher";
+                Properties.Settings.Default.Save();
+            }
+            if (materialComboBox2.SelectedIndex == 2)
+            {
+                
+                Properties.Settings.Default.startingTab = "Epic Games";
+                Properties.Settings.Default.Save();
+            }
+            if (materialComboBox2.SelectedIndex == 3)
+            {
+                
+                Properties.Settings.Default.startingTab = "GOG Galaxy";
+                Properties.Settings.Default.Save();
+            }
+            if (materialComboBox2.SelectedIndex == 4)
+            {
+                
+                Properties.Settings.Default.startingTab = "Origin";
+                Properties.Settings.Default.Save();
+            }
+            if (materialComboBox2.SelectedIndex == 5)
+            {
+                
+                Properties.Settings.Default.startingTab = "Steam";
+                Properties.Settings.Default.Save();
+            }
+            if (materialComboBox2.SelectedIndex == 6)
+            {
+                
+                Properties.Settings.Default.startingTab = "Ubisoft Connect";
+                Properties.Settings.Default.Save();
+            }
+            if (materialComboBox2.SelectedIndex == 7)
+            {
+
+                Properties.Settings.Default.startingTab = "Windows Store";
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(Application.StartupPath + @"\Updater.exe");
+        }
     }
-    }
+}
+

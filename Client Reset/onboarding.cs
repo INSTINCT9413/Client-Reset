@@ -28,5 +28,12 @@ namespace Client_Reset
         {
             this.Close();
         }
+
+        private void materialButton1_Click_1(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.firstTimeRunning = "0";
+            Properties.Settings.Default.Save();
+            this.Close();
+        }
     }
 }

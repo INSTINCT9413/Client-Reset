@@ -93,6 +93,16 @@ namespace Client_Reset.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3688440_delete_remove_trash_bin_dustbin_icon {
+            get {
+                object obj = ResourceManager.GetObject("_3688440_delete_remove_trash_bin_dustbin_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3688454_find_lens_search_magnifier_magnifying_icon {
             get {
                 object obj = ResourceManager.GetObject("3688454_find_lens_search_magnifier_magnifying_icon", resourceCulture);
@@ -133,6 +143,76 @@ namespace Client_Reset.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3688521_arrows_direction_download_pointer_up_icon {
+            get {
+                object obj = ResourceManager.GetObject("3688521_arrows_direction_download_pointer_up_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3688523_arrow_left_arrows_direction_down_icon {
+            get {
+                object obj = ResourceManager.GetObject("3688523_arrow_left_arrows_direction_down_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3688524_arrow_bottom_arrows_direction_down_icon {
+            get {
+                object obj = ResourceManager.GetObject("3688524_arrow_bottom_arrows_direction_down_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3688524_arrow_bottom_arrows_direction_down_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("3688524_arrow_bottom_arrows_direction_down_icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3688525_align_angle_chevron_top_html_tag_icon {
+            get {
+                object obj = ResourceManager.GetObject("3688525_align_angle_chevron_top_html tag_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3688526_angle_left_chevron_icon {
+            get {
+                object obj = ResourceManager.GetObject("3688526_angle_left_chevron_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3688527_down_chevron_angle_bottom_align_icon {
+            get {
+                object obj = ResourceManager.GetObject("3688527_down_chevron_angle_bottom_align_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4572454_middle {
             get {
                 object obj = ResourceManager.GetObject("4572454-middle", resourceCulture);
@@ -146,6 +226,16 @@ namespace Client_Reset.Properties {
         internal static System.Drawing.Bitmap _4572454_middle1 {
             get {
                 object obj = ResourceManager.GetObject("4572454-middle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap B2F3_Uplay_0_2 {
+            get {
+                object obj = ResourceManager.GetObject("B2F3_Uplay.0.2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

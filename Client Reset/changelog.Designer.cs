@@ -38,10 +38,11 @@ namespace Client_Reset
             this.webBrowser1.Location = new System.Drawing.Point(3, 24);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.ScriptErrorsSuppressed = true;
             this.webBrowser1.Size = new System.Drawing.Size(584, 423);
             this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri("https://raw.githubusercontent.com/INSTINCT9413/Client-Reset/master/changelog?toke" +
-        "n=AMZ2VVDB4S3LBZT6JGNURKTBCXCPS", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("https://jacobbrookhouse.me/downloads/server2/product/clientreset/data/changelog.h" +
+        "tml", System.UriKind.Absolute);
             // 
             // changelog
             // 

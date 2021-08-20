@@ -35,56 +35,94 @@ namespace Client_Reset
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel23 = new MaterialSkin.Controls.MaterialLabel();
+            this.bunifuCircleProgressbar7 = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton13 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton14 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel22 = new MaterialSkin.Controls.MaterialLabel();
+            this.bunifuCircleProgressbar6 = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton15 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton16 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel21 = new MaterialSkin.Controls.MaterialLabel();
+            this.bunifuCircleProgressbar5 = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton17 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton18 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.materialCard4 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel20 = new MaterialSkin.Controls.MaterialLabel();
+            this.bunifuCircleProgressbar4 = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton19 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton20 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.materialCard5 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
+            this.bunifuCircleProgressbar3 = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton21 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton22 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.materialCard6 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
+            this.bunifuCircleProgressbar2 = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton23 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton24 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton7 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.materialCard7 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
+            this.bunifuCircleProgressbar1 = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton12 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton11 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton8 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.materialCard8 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton25 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton9 = new MaterialSkin.Controls.MaterialButton();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.materialButton10 = new MaterialSkin.Controls.MaterialButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.materialCard1.SuspendLayout();
@@ -177,6 +215,11 @@ namespace Client_Reset
             // materialCard1
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.Controls.Add(this.materialLabel23);
+            this.materialCard1.Controls.Add(this.bunifuCircleProgressbar7);
+            this.materialCard1.Controls.Add(this.materialLabel9);
+            this.materialCard1.Controls.Add(this.materialButton13);
+            this.materialCard1.Controls.Add(this.materialButton14);
             this.materialCard1.Controls.Add(this.pictureBox9);
             this.materialCard1.Controls.Add(this.materialLabel1);
             this.materialCard1.Controls.Add(this.materialButton2);
@@ -190,6 +233,95 @@ namespace Client_Reset
             this.materialCard1.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard1.Size = new System.Drawing.Size(458, 427);
             this.materialCard1.TabIndex = 0;
+            // 
+            // materialLabel23
+            // 
+            this.materialLabel23.Depth = 0;
+            this.materialLabel23.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel23.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel23.Location = new System.Drawing.Point(206, 90);
+            this.materialLabel23.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel23.Name = "materialLabel23";
+            this.materialLabel23.Size = new System.Drawing.Size(64, 29);
+            this.materialLabel23.TabIndex = 14;
+            this.materialLabel23.Text = "0%";
+            this.materialLabel23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.materialLabel23.Visible = false;
+            // 
+            // bunifuCircleProgressbar7
+            // 
+            this.bunifuCircleProgressbar7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCircleProgressbar7.animated = true;
+            this.bunifuCircleProgressbar7.animationIterval = 5;
+            this.bunifuCircleProgressbar7.animationSpeed = 30;
+            this.bunifuCircleProgressbar7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgressbar7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCircleProgressbar7.BackgroundImage")));
+            this.bunifuCircleProgressbar7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.bunifuCircleProgressbar7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bunifuCircleProgressbar7.LabelVisible = false;
+            this.bunifuCircleProgressbar7.LineProgressThickness = 8;
+            this.bunifuCircleProgressbar7.LineThickness = 5;
+            this.bunifuCircleProgressbar7.Location = new System.Drawing.Point(144, 15);
+            this.bunifuCircleProgressbar7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bunifuCircleProgressbar7.MaxValue = 100;
+            this.bunifuCircleProgressbar7.Name = "bunifuCircleProgressbar7";
+            this.bunifuCircleProgressbar7.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgressbar7.ProgressColor = System.Drawing.Color.DimGray;
+            this.bunifuCircleProgressbar7.Size = new System.Drawing.Size(172, 172);
+            this.bunifuCircleProgressbar7.TabIndex = 12;
+            this.bunifuCircleProgressbar7.Value = 0;
+            this.bunifuCircleProgressbar7.Visible = false;
+            // 
+            // materialLabel9
+            // 
+            this.materialLabel9.Depth = 0;
+            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel9.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel9.Location = new System.Drawing.Point(12, 182);
+            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel9.Name = "materialLabel9";
+            this.materialLabel9.Size = new System.Drawing.Size(434, 39);
+            this.materialLabel9.TabIndex = 11;
+            this.materialLabel9.Text = "Battle.Net";
+            this.materialLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // materialButton13
+            // 
+            this.materialButton13.AutoSize = false;
+            this.materialButton13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton13.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton13.Depth = 0;
+            this.materialButton13.HighEmphasis = true;
+            this.materialButton13.Icon = global::Client_Reset.Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
+            this.materialButton13.Location = new System.Drawing.Point(58, 378);
+            this.materialButton13.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton13.Name = "materialButton13";
+            this.materialButton13.Size = new System.Drawing.Size(41, 36);
+            this.materialButton13.TabIndex = 10;
+            this.materialButton13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton13.UseAccentColor = true;
+            this.materialButton13.UseVisualStyleBackColor = true;
+            this.materialButton13.Click += new System.EventHandler(this.materialButton13_Click);
+            // 
+            // materialButton14
+            // 
+            this.materialButton14.AutoSize = false;
+            this.materialButton14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton14.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton14.Depth = 0;
+            this.materialButton14.HighEmphasis = true;
+            this.materialButton14.Icon = global::Client_Reset.Properties.Resources._3688454_find_lens_search_magnifier_magnifying_icon;
+            this.materialButton14.Location = new System.Drawing.Point(15, 378);
+            this.materialButton14.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton14.Name = "materialButton14";
+            this.materialButton14.Size = new System.Drawing.Size(41, 36);
+            this.materialButton14.TabIndex = 9;
+            this.materialButton14.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton14.UseAccentColor = true;
+            this.materialButton14.UseVisualStyleBackColor = true;
+            this.materialButton14.Click += new System.EventHandler(this.materialButton14_Click);
             // 
             // pictureBox9
             // 
@@ -238,6 +370,7 @@ namespace Client_Reset
             this.materialButton2.UseAccentColor = false;
             this.materialButton2.UseCompatibleTextRendering = true;
             this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
             // 
             // pictureBox1
             // 
@@ -265,6 +398,11 @@ namespace Client_Reset
             // materialCard2
             // 
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.materialLabel22);
+            this.materialCard2.Controls.Add(this.bunifuCircleProgressbar6);
+            this.materialCard2.Controls.Add(this.materialLabel10);
+            this.materialCard2.Controls.Add(this.materialButton15);
+            this.materialCard2.Controls.Add(this.materialButton16);
             this.materialCard2.Controls.Add(this.pictureBox10);
             this.materialCard2.Controls.Add(this.materialLabel2);
             this.materialCard2.Controls.Add(this.materialButton3);
@@ -278,6 +416,95 @@ namespace Client_Reset
             this.materialCard2.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard2.Size = new System.Drawing.Size(458, 427);
             this.materialCard2.TabIndex = 1;
+            // 
+            // materialLabel22
+            // 
+            this.materialLabel22.Depth = 0;
+            this.materialLabel22.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel22.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel22.Location = new System.Drawing.Point(206, 90);
+            this.materialLabel22.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel22.Name = "materialLabel22";
+            this.materialLabel22.Size = new System.Drawing.Size(64, 29);
+            this.materialLabel22.TabIndex = 14;
+            this.materialLabel22.Text = "0%";
+            this.materialLabel22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.materialLabel22.Visible = false;
+            // 
+            // bunifuCircleProgressbar6
+            // 
+            this.bunifuCircleProgressbar6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCircleProgressbar6.animated = true;
+            this.bunifuCircleProgressbar6.animationIterval = 5;
+            this.bunifuCircleProgressbar6.animationSpeed = 30;
+            this.bunifuCircleProgressbar6.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgressbar6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCircleProgressbar6.BackgroundImage")));
+            this.bunifuCircleProgressbar6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCircleProgressbar6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bunifuCircleProgressbar6.LabelVisible = false;
+            this.bunifuCircleProgressbar6.LineProgressThickness = 8;
+            this.bunifuCircleProgressbar6.LineThickness = 5;
+            this.bunifuCircleProgressbar6.Location = new System.Drawing.Point(144, 15);
+            this.bunifuCircleProgressbar6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bunifuCircleProgressbar6.MaxValue = 100;
+            this.bunifuCircleProgressbar6.Name = "bunifuCircleProgressbar6";
+            this.bunifuCircleProgressbar6.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgressbar6.ProgressColor = System.Drawing.Color.DimGray;
+            this.bunifuCircleProgressbar6.Size = new System.Drawing.Size(172, 172);
+            this.bunifuCircleProgressbar6.TabIndex = 13;
+            this.bunifuCircleProgressbar6.Value = 0;
+            this.bunifuCircleProgressbar6.Visible = false;
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel10.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel10.Location = new System.Drawing.Point(12, 182);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(434, 37);
+            this.materialLabel10.TabIndex = 12;
+            this.materialLabel10.Text = "Bethesda Launcher";
+            this.materialLabel10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // materialButton15
+            // 
+            this.materialButton15.AutoSize = false;
+            this.materialButton15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton15.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton15.Depth = 0;
+            this.materialButton15.HighEmphasis = true;
+            this.materialButton15.Icon = global::Client_Reset.Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
+            this.materialButton15.Location = new System.Drawing.Point(57, 378);
+            this.materialButton15.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton15.Name = "materialButton15";
+            this.materialButton15.Size = new System.Drawing.Size(41, 36);
+            this.materialButton15.TabIndex = 10;
+            this.materialButton15.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton15.UseAccentColor = true;
+            this.materialButton15.UseVisualStyleBackColor = true;
+            this.materialButton15.Click += new System.EventHandler(this.materialButton15_Click);
+            // 
+            // materialButton16
+            // 
+            this.materialButton16.AutoSize = false;
+            this.materialButton16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton16.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton16.Depth = 0;
+            this.materialButton16.HighEmphasis = true;
+            this.materialButton16.Icon = global::Client_Reset.Properties.Resources._3688454_find_lens_search_magnifier_magnifying_icon;
+            this.materialButton16.Location = new System.Drawing.Point(14, 378);
+            this.materialButton16.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton16.Name = "materialButton16";
+            this.materialButton16.Size = new System.Drawing.Size(41, 36);
+            this.materialButton16.TabIndex = 9;
+            this.materialButton16.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton16.UseAccentColor = true;
+            this.materialButton16.UseVisualStyleBackColor = true;
+            this.materialButton16.Click += new System.EventHandler(this.materialButton16_Click);
             // 
             // pictureBox10
             // 
@@ -353,6 +580,11 @@ namespace Client_Reset
             // materialCard3
             // 
             this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard3.Controls.Add(this.materialLabel21);
+            this.materialCard3.Controls.Add(this.bunifuCircleProgressbar5);
+            this.materialCard3.Controls.Add(this.materialLabel11);
+            this.materialCard3.Controls.Add(this.materialButton17);
+            this.materialCard3.Controls.Add(this.materialButton18);
             this.materialCard3.Controls.Add(this.pictureBox11);
             this.materialCard3.Controls.Add(this.materialLabel3);
             this.materialCard3.Controls.Add(this.materialButton4);
@@ -366,6 +598,95 @@ namespace Client_Reset
             this.materialCard3.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard3.Size = new System.Drawing.Size(458, 427);
             this.materialCard3.TabIndex = 1;
+            // 
+            // materialLabel21
+            // 
+            this.materialLabel21.Depth = 0;
+            this.materialLabel21.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel21.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel21.Location = new System.Drawing.Point(206, 90);
+            this.materialLabel21.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel21.Name = "materialLabel21";
+            this.materialLabel21.Size = new System.Drawing.Size(64, 29);
+            this.materialLabel21.TabIndex = 14;
+            this.materialLabel21.Text = "0%";
+            this.materialLabel21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.materialLabel21.Visible = false;
+            // 
+            // bunifuCircleProgressbar5
+            // 
+            this.bunifuCircleProgressbar5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCircleProgressbar5.animated = true;
+            this.bunifuCircleProgressbar5.animationIterval = 5;
+            this.bunifuCircleProgressbar5.animationSpeed = 30;
+            this.bunifuCircleProgressbar5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgressbar5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCircleProgressbar5.BackgroundImage")));
+            this.bunifuCircleProgressbar5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCircleProgressbar5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bunifuCircleProgressbar5.LabelVisible = false;
+            this.bunifuCircleProgressbar5.LineProgressThickness = 8;
+            this.bunifuCircleProgressbar5.LineThickness = 5;
+            this.bunifuCircleProgressbar5.Location = new System.Drawing.Point(144, 15);
+            this.bunifuCircleProgressbar5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bunifuCircleProgressbar5.MaxValue = 100;
+            this.bunifuCircleProgressbar5.Name = "bunifuCircleProgressbar5";
+            this.bunifuCircleProgressbar5.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgressbar5.ProgressColor = System.Drawing.Color.DimGray;
+            this.bunifuCircleProgressbar5.Size = new System.Drawing.Size(172, 172);
+            this.bunifuCircleProgressbar5.TabIndex = 13;
+            this.bunifuCircleProgressbar5.Value = 0;
+            this.bunifuCircleProgressbar5.Visible = false;
+            // 
+            // materialLabel11
+            // 
+            this.materialLabel11.Depth = 0;
+            this.materialLabel11.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel11.Location = new System.Drawing.Point(12, 182);
+            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel11.Name = "materialLabel11";
+            this.materialLabel11.Size = new System.Drawing.Size(434, 41);
+            this.materialLabel11.TabIndex = 12;
+            this.materialLabel11.Text = "Epic Games";
+            this.materialLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // materialButton17
+            // 
+            this.materialButton17.AutoSize = false;
+            this.materialButton17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton17.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton17.Depth = 0;
+            this.materialButton17.HighEmphasis = true;
+            this.materialButton17.Icon = global::Client_Reset.Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
+            this.materialButton17.Location = new System.Drawing.Point(57, 378);
+            this.materialButton17.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton17.Name = "materialButton17";
+            this.materialButton17.Size = new System.Drawing.Size(41, 36);
+            this.materialButton17.TabIndex = 10;
+            this.materialButton17.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton17.UseAccentColor = true;
+            this.materialButton17.UseVisualStyleBackColor = true;
+            this.materialButton17.Click += new System.EventHandler(this.materialButton17_Click);
+            // 
+            // materialButton18
+            // 
+            this.materialButton18.AutoSize = false;
+            this.materialButton18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton18.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton18.Depth = 0;
+            this.materialButton18.HighEmphasis = true;
+            this.materialButton18.Icon = global::Client_Reset.Properties.Resources._3688454_find_lens_search_magnifier_magnifying_icon;
+            this.materialButton18.Location = new System.Drawing.Point(14, 378);
+            this.materialButton18.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton18.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton18.Name = "materialButton18";
+            this.materialButton18.Size = new System.Drawing.Size(41, 36);
+            this.materialButton18.TabIndex = 9;
+            this.materialButton18.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton18.UseAccentColor = true;
+            this.materialButton18.UseVisualStyleBackColor = true;
+            this.materialButton18.Click += new System.EventHandler(this.materialButton18_Click);
             // 
             // pictureBox11
             // 
@@ -441,6 +762,11 @@ namespace Client_Reset
             // materialCard4
             // 
             this.materialCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard4.Controls.Add(this.materialLabel20);
+            this.materialCard4.Controls.Add(this.bunifuCircleProgressbar4);
+            this.materialCard4.Controls.Add(this.materialLabel12);
+            this.materialCard4.Controls.Add(this.materialButton19);
+            this.materialCard4.Controls.Add(this.materialButton20);
             this.materialCard4.Controls.Add(this.pictureBox12);
             this.materialCard4.Controls.Add(this.materialLabel4);
             this.materialCard4.Controls.Add(this.materialButton5);
@@ -454,6 +780,95 @@ namespace Client_Reset
             this.materialCard4.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard4.Size = new System.Drawing.Size(458, 427);
             this.materialCard4.TabIndex = 1;
+            // 
+            // materialLabel20
+            // 
+            this.materialLabel20.Depth = 0;
+            this.materialLabel20.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel20.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel20.Location = new System.Drawing.Point(206, 90);
+            this.materialLabel20.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel20.Name = "materialLabel20";
+            this.materialLabel20.Size = new System.Drawing.Size(64, 29);
+            this.materialLabel20.TabIndex = 14;
+            this.materialLabel20.Text = "0%";
+            this.materialLabel20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.materialLabel20.Visible = false;
+            // 
+            // bunifuCircleProgressbar4
+            // 
+            this.bunifuCircleProgressbar4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCircleProgressbar4.animated = true;
+            this.bunifuCircleProgressbar4.animationIterval = 5;
+            this.bunifuCircleProgressbar4.animationSpeed = 30;
+            this.bunifuCircleProgressbar4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgressbar4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCircleProgressbar4.BackgroundImage")));
+            this.bunifuCircleProgressbar4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCircleProgressbar4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bunifuCircleProgressbar4.LabelVisible = false;
+            this.bunifuCircleProgressbar4.LineProgressThickness = 8;
+            this.bunifuCircleProgressbar4.LineThickness = 5;
+            this.bunifuCircleProgressbar4.Location = new System.Drawing.Point(144, 15);
+            this.bunifuCircleProgressbar4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bunifuCircleProgressbar4.MaxValue = 100;
+            this.bunifuCircleProgressbar4.Name = "bunifuCircleProgressbar4";
+            this.bunifuCircleProgressbar4.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgressbar4.ProgressColor = System.Drawing.Color.DimGray;
+            this.bunifuCircleProgressbar4.Size = new System.Drawing.Size(172, 172);
+            this.bunifuCircleProgressbar4.TabIndex = 13;
+            this.bunifuCircleProgressbar4.Value = 0;
+            this.bunifuCircleProgressbar4.Visible = false;
+            // 
+            // materialLabel12
+            // 
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel12.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel12.Location = new System.Drawing.Point(12, 182);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(434, 40);
+            this.materialLabel12.TabIndex = 12;
+            this.materialLabel12.Text = "GOG Galaxy";
+            this.materialLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // materialButton19
+            // 
+            this.materialButton19.AutoSize = false;
+            this.materialButton19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton19.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton19.Depth = 0;
+            this.materialButton19.HighEmphasis = true;
+            this.materialButton19.Icon = global::Client_Reset.Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
+            this.materialButton19.Location = new System.Drawing.Point(57, 378);
+            this.materialButton19.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton19.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton19.Name = "materialButton19";
+            this.materialButton19.Size = new System.Drawing.Size(41, 36);
+            this.materialButton19.TabIndex = 10;
+            this.materialButton19.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton19.UseAccentColor = true;
+            this.materialButton19.UseVisualStyleBackColor = true;
+            this.materialButton19.Click += new System.EventHandler(this.materialButton19_Click);
+            // 
+            // materialButton20
+            // 
+            this.materialButton20.AutoSize = false;
+            this.materialButton20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton20.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton20.Depth = 0;
+            this.materialButton20.HighEmphasis = true;
+            this.materialButton20.Icon = global::Client_Reset.Properties.Resources._3688454_find_lens_search_magnifier_magnifying_icon;
+            this.materialButton20.Location = new System.Drawing.Point(14, 378);
+            this.materialButton20.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton20.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton20.Name = "materialButton20";
+            this.materialButton20.Size = new System.Drawing.Size(41, 36);
+            this.materialButton20.TabIndex = 9;
+            this.materialButton20.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton20.UseAccentColor = true;
+            this.materialButton20.UseVisualStyleBackColor = true;
+            this.materialButton20.Click += new System.EventHandler(this.materialButton20_Click);
             // 
             // pictureBox12
             // 
@@ -529,6 +944,11 @@ namespace Client_Reset
             // materialCard5
             // 
             this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialLabel19);
+            this.materialCard5.Controls.Add(this.bunifuCircleProgressbar3);
+            this.materialCard5.Controls.Add(this.materialLabel13);
+            this.materialCard5.Controls.Add(this.materialButton21);
+            this.materialCard5.Controls.Add(this.materialButton22);
             this.materialCard5.Controls.Add(this.pictureBox13);
             this.materialCard5.Controls.Add(this.materialLabel5);
             this.materialCard5.Controls.Add(this.materialButton6);
@@ -542,6 +962,95 @@ namespace Client_Reset
             this.materialCard5.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard5.Size = new System.Drawing.Size(458, 427);
             this.materialCard5.TabIndex = 1;
+            // 
+            // materialLabel19
+            // 
+            this.materialLabel19.Depth = 0;
+            this.materialLabel19.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel19.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel19.Location = new System.Drawing.Point(206, 90);
+            this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel19.Name = "materialLabel19";
+            this.materialLabel19.Size = new System.Drawing.Size(64, 29);
+            this.materialLabel19.TabIndex = 14;
+            this.materialLabel19.Text = "0%";
+            this.materialLabel19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.materialLabel19.Visible = false;
+            // 
+            // bunifuCircleProgressbar3
+            // 
+            this.bunifuCircleProgressbar3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCircleProgressbar3.animated = true;
+            this.bunifuCircleProgressbar3.animationIterval = 5;
+            this.bunifuCircleProgressbar3.animationSpeed = 30;
+            this.bunifuCircleProgressbar3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgressbar3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCircleProgressbar3.BackgroundImage")));
+            this.bunifuCircleProgressbar3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCircleProgressbar3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bunifuCircleProgressbar3.LabelVisible = false;
+            this.bunifuCircleProgressbar3.LineProgressThickness = 8;
+            this.bunifuCircleProgressbar3.LineThickness = 5;
+            this.bunifuCircleProgressbar3.Location = new System.Drawing.Point(144, 15);
+            this.bunifuCircleProgressbar3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bunifuCircleProgressbar3.MaxValue = 100;
+            this.bunifuCircleProgressbar3.Name = "bunifuCircleProgressbar3";
+            this.bunifuCircleProgressbar3.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgressbar3.ProgressColor = System.Drawing.Color.DimGray;
+            this.bunifuCircleProgressbar3.Size = new System.Drawing.Size(172, 172);
+            this.bunifuCircleProgressbar3.TabIndex = 13;
+            this.bunifuCircleProgressbar3.Value = 0;
+            this.bunifuCircleProgressbar3.Visible = false;
+            // 
+            // materialLabel13
+            // 
+            this.materialLabel13.Depth = 0;
+            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel13.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel13.Location = new System.Drawing.Point(6, 182);
+            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel13.Name = "materialLabel13";
+            this.materialLabel13.Size = new System.Drawing.Size(434, 36);
+            this.materialLabel13.TabIndex = 12;
+            this.materialLabel13.Text = "Origin";
+            this.materialLabel13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // materialButton21
+            // 
+            this.materialButton21.AutoSize = false;
+            this.materialButton21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton21.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton21.Depth = 0;
+            this.materialButton21.HighEmphasis = true;
+            this.materialButton21.Icon = global::Client_Reset.Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
+            this.materialButton21.Location = new System.Drawing.Point(57, 378);
+            this.materialButton21.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton21.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton21.Name = "materialButton21";
+            this.materialButton21.Size = new System.Drawing.Size(41, 36);
+            this.materialButton21.TabIndex = 10;
+            this.materialButton21.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton21.UseAccentColor = true;
+            this.materialButton21.UseVisualStyleBackColor = true;
+            this.materialButton21.Click += new System.EventHandler(this.materialButton21_Click);
+            // 
+            // materialButton22
+            // 
+            this.materialButton22.AutoSize = false;
+            this.materialButton22.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton22.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton22.Depth = 0;
+            this.materialButton22.HighEmphasis = true;
+            this.materialButton22.Icon = global::Client_Reset.Properties.Resources._3688454_find_lens_search_magnifier_magnifying_icon;
+            this.materialButton22.Location = new System.Drawing.Point(14, 378);
+            this.materialButton22.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton22.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton22.Name = "materialButton22";
+            this.materialButton22.Size = new System.Drawing.Size(41, 36);
+            this.materialButton22.TabIndex = 9;
+            this.materialButton22.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton22.UseAccentColor = true;
+            this.materialButton22.UseVisualStyleBackColor = true;
+            this.materialButton22.Click += new System.EventHandler(this.materialButton22_Click);
             // 
             // pictureBox13
             // 
@@ -590,6 +1099,7 @@ namespace Client_Reset
             this.materialButton6.UseAccentColor = false;
             this.materialButton6.UseCompatibleTextRendering = true;
             this.materialButton6.UseVisualStyleBackColor = true;
+            this.materialButton6.Click += new System.EventHandler(this.materialButton6_Click);
             // 
             // pictureBox5
             // 
@@ -617,6 +1127,11 @@ namespace Client_Reset
             // materialCard6
             // 
             this.materialCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard6.Controls.Add(this.materialLabel18);
+            this.materialCard6.Controls.Add(this.bunifuCircleProgressbar2);
+            this.materialCard6.Controls.Add(this.materialLabel14);
+            this.materialCard6.Controls.Add(this.materialButton23);
+            this.materialCard6.Controls.Add(this.materialButton24);
             this.materialCard6.Controls.Add(this.pictureBox14);
             this.materialCard6.Controls.Add(this.materialLabel6);
             this.materialCard6.Controls.Add(this.materialButton7);
@@ -630,6 +1145,95 @@ namespace Client_Reset
             this.materialCard6.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard6.Size = new System.Drawing.Size(458, 427);
             this.materialCard6.TabIndex = 1;
+            // 
+            // materialLabel18
+            // 
+            this.materialLabel18.Depth = 0;
+            this.materialLabel18.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel18.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel18.Location = new System.Drawing.Point(206, 90);
+            this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel18.Name = "materialLabel18";
+            this.materialLabel18.Size = new System.Drawing.Size(64, 29);
+            this.materialLabel18.TabIndex = 14;
+            this.materialLabel18.Text = "0%";
+            this.materialLabel18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.materialLabel18.Visible = false;
+            // 
+            // bunifuCircleProgressbar2
+            // 
+            this.bunifuCircleProgressbar2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCircleProgressbar2.animated = true;
+            this.bunifuCircleProgressbar2.animationIterval = 5;
+            this.bunifuCircleProgressbar2.animationSpeed = 30;
+            this.bunifuCircleProgressbar2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgressbar2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCircleProgressbar2.BackgroundImage")));
+            this.bunifuCircleProgressbar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCircleProgressbar2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bunifuCircleProgressbar2.LabelVisible = false;
+            this.bunifuCircleProgressbar2.LineProgressThickness = 8;
+            this.bunifuCircleProgressbar2.LineThickness = 5;
+            this.bunifuCircleProgressbar2.Location = new System.Drawing.Point(144, 15);
+            this.bunifuCircleProgressbar2.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuCircleProgressbar2.MaxValue = 100;
+            this.bunifuCircleProgressbar2.Name = "bunifuCircleProgressbar2";
+            this.bunifuCircleProgressbar2.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgressbar2.ProgressColor = System.Drawing.Color.DimGray;
+            this.bunifuCircleProgressbar2.Size = new System.Drawing.Size(172, 172);
+            this.bunifuCircleProgressbar2.TabIndex = 13;
+            this.bunifuCircleProgressbar2.Value = 0;
+            this.bunifuCircleProgressbar2.Visible = false;
+            // 
+            // materialLabel14
+            // 
+            this.materialLabel14.Depth = 0;
+            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel14.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel14.Location = new System.Drawing.Point(11, 182);
+            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel14.Name = "materialLabel14";
+            this.materialLabel14.Size = new System.Drawing.Size(434, 35);
+            this.materialLabel14.TabIndex = 12;
+            this.materialLabel14.Text = "Steam";
+            this.materialLabel14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // materialButton23
+            // 
+            this.materialButton23.AutoSize = false;
+            this.materialButton23.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton23.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton23.Depth = 0;
+            this.materialButton23.HighEmphasis = true;
+            this.materialButton23.Icon = global::Client_Reset.Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
+            this.materialButton23.Location = new System.Drawing.Point(57, 378);
+            this.materialButton23.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton23.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton23.Name = "materialButton23";
+            this.materialButton23.Size = new System.Drawing.Size(41, 36);
+            this.materialButton23.TabIndex = 10;
+            this.materialButton23.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton23.UseAccentColor = true;
+            this.materialButton23.UseVisualStyleBackColor = true;
+            this.materialButton23.Click += new System.EventHandler(this.materialButton23_Click);
+            // 
+            // materialButton24
+            // 
+            this.materialButton24.AutoSize = false;
+            this.materialButton24.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton24.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton24.Depth = 0;
+            this.materialButton24.HighEmphasis = true;
+            this.materialButton24.Icon = global::Client_Reset.Properties.Resources._3688454_find_lens_search_magnifier_magnifying_icon;
+            this.materialButton24.Location = new System.Drawing.Point(14, 378);
+            this.materialButton24.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton24.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton24.Name = "materialButton24";
+            this.materialButton24.Size = new System.Drawing.Size(41, 36);
+            this.materialButton24.TabIndex = 9;
+            this.materialButton24.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton24.UseAccentColor = true;
+            this.materialButton24.UseVisualStyleBackColor = true;
+            this.materialButton24.Click += new System.EventHandler(this.materialButton24_Click);
             // 
             // pictureBox14
             // 
@@ -705,6 +1309,11 @@ namespace Client_Reset
             // materialCard7
             // 
             this.materialCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard7.Controls.Add(this.materialLabel17);
+            this.materialCard7.Controls.Add(this.bunifuCircleProgressbar1);
+            this.materialCard7.Controls.Add(this.materialLabel15);
+            this.materialCard7.Controls.Add(this.materialButton12);
+            this.materialCard7.Controls.Add(this.materialButton11);
             this.materialCard7.Controls.Add(this.pictureBox15);
             this.materialCard7.Controls.Add(this.materialLabel7);
             this.materialCard7.Controls.Add(this.materialButton8);
@@ -718,6 +1327,95 @@ namespace Client_Reset
             this.materialCard7.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard7.Size = new System.Drawing.Size(458, 427);
             this.materialCard7.TabIndex = 1;
+            // 
+            // materialLabel17
+            // 
+            this.materialLabel17.Depth = 0;
+            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel17.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel17.Location = new System.Drawing.Point(206, 90);
+            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel17.Name = "materialLabel17";
+            this.materialLabel17.Size = new System.Drawing.Size(64, 29);
+            this.materialLabel17.TabIndex = 13;
+            this.materialLabel17.Text = "0%";
+            this.materialLabel17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.materialLabel17.Visible = false;
+            // 
+            // bunifuCircleProgressbar1
+            // 
+            this.bunifuCircleProgressbar1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCircleProgressbar1.animated = true;
+            this.bunifuCircleProgressbar1.animationIterval = 5;
+            this.bunifuCircleProgressbar1.animationSpeed = 30;
+            this.bunifuCircleProgressbar1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgressbar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCircleProgressbar1.BackgroundImage")));
+            this.bunifuCircleProgressbar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCircleProgressbar1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bunifuCircleProgressbar1.LabelVisible = false;
+            this.bunifuCircleProgressbar1.LineProgressThickness = 8;
+            this.bunifuCircleProgressbar1.LineThickness = 5;
+            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(144, 15);
+            this.bunifuCircleProgressbar1.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuCircleProgressbar1.MaxValue = 100;
+            this.bunifuCircleProgressbar1.Name = "bunifuCircleProgressbar1";
+            this.bunifuCircleProgressbar1.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgressbar1.ProgressColor = System.Drawing.Color.DimGray;
+            this.bunifuCircleProgressbar1.Size = new System.Drawing.Size(172, 172);
+            this.bunifuCircleProgressbar1.TabIndex = 6;
+            this.bunifuCircleProgressbar1.Value = 0;
+            this.bunifuCircleProgressbar1.Visible = false;
+            // 
+            // materialLabel15
+            // 
+            this.materialLabel15.Depth = 0;
+            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel15.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel15.Location = new System.Drawing.Point(12, 182);
+            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel15.Name = "materialLabel15";
+            this.materialLabel15.Size = new System.Drawing.Size(434, 42);
+            this.materialLabel15.TabIndex = 12;
+            this.materialLabel15.Text = "Ubisoft Connect (UPlay)";
+            this.materialLabel15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // materialButton12
+            // 
+            this.materialButton12.AutoSize = false;
+            this.materialButton12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton12.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton12.Depth = 0;
+            this.materialButton12.HighEmphasis = true;
+            this.materialButton12.Icon = global::Client_Reset.Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
+            this.materialButton12.Location = new System.Drawing.Point(57, 378);
+            this.materialButton12.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton12.Name = "materialButton12";
+            this.materialButton12.Size = new System.Drawing.Size(41, 36);
+            this.materialButton12.TabIndex = 8;
+            this.materialButton12.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton12.UseAccentColor = true;
+            this.materialButton12.UseVisualStyleBackColor = true;
+            this.materialButton12.Click += new System.EventHandler(this.materialButton12_Click);
+            // 
+            // materialButton11
+            // 
+            this.materialButton11.AutoSize = false;
+            this.materialButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton11.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton11.Depth = 0;
+            this.materialButton11.HighEmphasis = true;
+            this.materialButton11.Icon = global::Client_Reset.Properties.Resources._3688454_find_lens_search_magnifier_magnifying_icon;
+            this.materialButton11.Location = new System.Drawing.Point(14, 378);
+            this.materialButton11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton11.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton11.Name = "materialButton11";
+            this.materialButton11.Size = new System.Drawing.Size(41, 36);
+            this.materialButton11.TabIndex = 7;
+            this.materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton11.UseAccentColor = true;
+            this.materialButton11.UseVisualStyleBackColor = true;
+            this.materialButton11.Click += new System.EventHandler(this.materialButton11_Click);
             // 
             // pictureBox15
             // 
@@ -766,10 +1464,11 @@ namespace Client_Reset
             this.materialButton8.UseAccentColor = false;
             this.materialButton8.UseCompatibleTextRendering = true;
             this.materialButton8.UseVisualStyleBackColor = true;
+            this.materialButton8.Click += new System.EventHandler(this.materialButton8_Click);
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::Client_Reset.Properties.Resources.Uplay_Logo;
+            this.pictureBox7.Image = global::Client_Reset.Properties.Resources.B2F3_Uplay_0_2;
             this.pictureBox7.Location = new System.Drawing.Point(166, 63);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
@@ -793,6 +1492,8 @@ namespace Client_Reset
             // materialCard8
             // 
             this.materialCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard8.Controls.Add(this.materialLabel16);
+            this.materialCard8.Controls.Add(this.materialButton25);
             this.materialCard8.Controls.Add(this.pictureBox16);
             this.materialCard8.Controls.Add(this.materialLabel8);
             this.materialCard8.Controls.Add(this.materialButton9);
@@ -806,6 +1507,38 @@ namespace Client_Reset
             this.materialCard8.Padding = new System.Windows.Forms.Padding(9);
             this.materialCard8.Size = new System.Drawing.Size(458, 427);
             this.materialCard8.TabIndex = 1;
+            // 
+            // materialLabel16
+            // 
+            this.materialLabel16.Depth = 0;
+            this.materialLabel16.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel16.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
+            this.materialLabel16.Location = new System.Drawing.Point(12, 182);
+            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel16.Name = "materialLabel16";
+            this.materialLabel16.Size = new System.Drawing.Size(434, 39);
+            this.materialLabel16.TabIndex = 12;
+            this.materialLabel16.Text = "Microsoft Store";
+            this.materialLabel16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // materialButton25
+            // 
+            this.materialButton25.AutoSize = false;
+            this.materialButton25.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton25.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton25.Depth = 0;
+            this.materialButton25.HighEmphasis = true;
+            this.materialButton25.Icon = global::Client_Reset.Properties.Resources._3688431_api_config_configuration_machine_wrench_icon;
+            this.materialButton25.Location = new System.Drawing.Point(14, 378);
+            this.materialButton25.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton25.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton25.Name = "materialButton25";
+            this.materialButton25.Size = new System.Drawing.Size(41, 36);
+            this.materialButton25.TabIndex = 10;
+            this.materialButton25.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton25.UseAccentColor = true;
+            this.materialButton25.UseVisualStyleBackColor = true;
+            this.materialButton25.Click += new System.EventHandler(this.materialButton25_Click);
             // 
             // pictureBox16
             // 
@@ -922,10 +1655,17 @@ namespace Client_Reset
             this.materialButton1.UseVisualStyleBackColor = true;
             this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 20000;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 549);
             this.Controls.Add(this.materialButton10);
             this.Controls.Add(this.materialButton1);
@@ -1035,6 +1775,44 @@ namespace Client_Reset
         private System.Windows.Forms.Timer timer1;
         public MaterialSkin.Controls.MaterialButton materialButton10;
         private System.Windows.Forms.ToolTip toolTip1;
+        private MaterialSkin.Controls.MaterialButton materialButton12;
+        private MaterialSkin.Controls.MaterialButton materialButton11;
+        private MaterialSkin.Controls.MaterialButton materialButton13;
+        private MaterialSkin.Controls.MaterialButton materialButton14;
+        private MaterialSkin.Controls.MaterialButton materialButton15;
+        private MaterialSkin.Controls.MaterialButton materialButton16;
+        private MaterialSkin.Controls.MaterialButton materialButton17;
+        private MaterialSkin.Controls.MaterialButton materialButton18;
+        private MaterialSkin.Controls.MaterialButton materialButton19;
+        private MaterialSkin.Controls.MaterialButton materialButton20;
+        private MaterialSkin.Controls.MaterialButton materialButton21;
+        private MaterialSkin.Controls.MaterialButton materialButton22;
+        private MaterialSkin.Controls.MaterialButton materialButton23;
+        private MaterialSkin.Controls.MaterialButton materialButton24;
+        private MaterialSkin.Controls.MaterialButton materialButton25;
+        private System.Windows.Forms.Timer timer2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private MaterialSkin.Controls.MaterialLabel materialLabel10;
+        private MaterialSkin.Controls.MaterialLabel materialLabel11;
+        private MaterialSkin.Controls.MaterialLabel materialLabel12;
+        private MaterialSkin.Controls.MaterialLabel materialLabel13;
+        private MaterialSkin.Controls.MaterialLabel materialLabel14;
+        private MaterialSkin.Controls.MaterialLabel materialLabel15;
+        private MaterialSkin.Controls.MaterialLabel materialLabel16;
+        private Bunifu.Framework.UI.BunifuCircleProgressbar bunifuCircleProgressbar1;
+        private Bunifu.Framework.UI.BunifuCircleProgressbar bunifuCircleProgressbar7;
+        private Bunifu.Framework.UI.BunifuCircleProgressbar bunifuCircleProgressbar6;
+        private Bunifu.Framework.UI.BunifuCircleProgressbar bunifuCircleProgressbar5;
+        private Bunifu.Framework.UI.BunifuCircleProgressbar bunifuCircleProgressbar4;
+        private Bunifu.Framework.UI.BunifuCircleProgressbar bunifuCircleProgressbar3;
+        private Bunifu.Framework.UI.BunifuCircleProgressbar bunifuCircleProgressbar2;
+        private MaterialSkin.Controls.MaterialLabel materialLabel17;
+        private MaterialSkin.Controls.MaterialLabel materialLabel23;
+        private MaterialSkin.Controls.MaterialLabel materialLabel22;
+        private MaterialSkin.Controls.MaterialLabel materialLabel21;
+        private MaterialSkin.Controls.MaterialLabel materialLabel20;
+        private MaterialSkin.Controls.MaterialLabel materialLabel19;
+        private MaterialSkin.Controls.MaterialLabel materialLabel18;
     }
 }
 

@@ -29,5 +29,11 @@
     <Setting Name="firstTimeRunning" Type="System.String" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
+    <Setting Name="startingTab" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Battle.net</Value>
+    </Setting>
+    <Setting Name="setting" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

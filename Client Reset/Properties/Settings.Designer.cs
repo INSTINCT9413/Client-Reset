@@ -130,5 +130,26 @@ namespace Client_Reset.Properties {
                 this["firstTimeRunning"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Battle.net")]
+        public string startingTab {
+            get {
+                return ((string)(this["startingTab"]));
+            }
+            set {
+                this["startingTab"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool setting {
+            get {
+                return ((bool)(this["setting"]));
+            }
+        }
     }
 }
