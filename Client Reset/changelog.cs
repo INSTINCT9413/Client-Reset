@@ -17,11 +17,14 @@ namespace Client_Reset
         public changelog()
         {
             InitializeComponent();
+            
         }
 
-        private void changelog_Load(object sender, EventArgs e)
+        private async void changelog_Load(object sender, EventArgs e)
         {
-
+            webView21.InitializeLifetimeService();
+            await webView21.EnsureCoreWebView2Async(null);
+            webView21.CoreWebView2.Navigate("https://jacobbrookhouse.me/downloads/server2/product/clientreset/data/changelog.html");
         }
     }
 }

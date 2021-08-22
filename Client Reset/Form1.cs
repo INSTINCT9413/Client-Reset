@@ -195,6 +195,26 @@ namespace Client_Reset
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Thread worker = new Thread(new ThreadStart(() =>
+            {
+                LoadSettings();
+            }));
+            worker.Start();
+           
+
+        }
+        public void LoadSettings()
+        {
+            if (Settings.Default.acceptedLicnese == null || Settings.Default.acceptedLicnese == "No")
+            {
+                CheckForIllegalCrossThreadCalls = false;
+                //this.Hide();
+                //this.Visible = false;
+                Legal LD = new Legal();
+                LD.StartPosition = FormStartPosition.CenterScreen;
+                LD.Show();
+
+            }
 
             if (Settings.Default.themeMode == "Light")
             {
@@ -281,10 +301,8 @@ namespace Client_Reset
                 MessageBox.Show("Error: DPI0x00\n\nSystem Scaling has been detected and is above 100%.\nClient Reset does not support System Scaling. Please change your scaling back to 100% or resize Client Reset manually!", "System Scaling Detected", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             this.Shown += new System.EventHandler(this.Form1_Shown);
-            this.Visible = false;
-
+            this.Visible = true;
         }
-
         private void materialButton1_Click(object sender, EventArgs e)
         {
             SettingsForm SettingsFRM = new SettingsForm();
@@ -618,12 +636,12 @@ namespace Client_Reset
                     materialLabel21.Visible = true;
                     bunifuCircleProgressbar5.Value = 0;
                         bunifuCircleProgressbar5.Visible = true;
-                        FileDownloaded = "Epic Setup.exe";
+                        FileDownloaded = "Epic Setup.msi";
                         using (WebClient wc = new WebClient())
                         {
                             wc.DownloadProgressChanged += new DownloadProgressChangedEventHandler(wc_DownloadProgressChanged);
                             wc.DownloadFileCompleted += new AsyncCompletedEventHandler(AsyncDownloadDone);
-                            wc.DownloadFileAsync(new System.Uri(EGInstaller), Application.StartupPath + @"\data\downloads\installers\Epic Setup.exe");
+                            wc.DownloadFileAsync(new System.Uri(EGInstaller), Application.StartupPath + @"\data\downloads\installers\Epic Setup.msi");
                     }
                 }
             }
@@ -1075,7 +1093,7 @@ namespace Client_Reset
                 if (mess == DialogResult.Yes)
                     System.Diagnostics.Process.Start(BNMain);
                 //Interaction.Shell("Shutdown -r -t 5");
-                else if (File.Exists(OMain))
+                else if (File.Exists(BNMain))
                 {
                     //System.Diagnostics.Process.Start(BNMain);
                     Thread.Sleep(5000);
@@ -1322,6 +1340,680 @@ namespace Client_Reset
                     DeleteFilesUbisoft();
                 }));
                 worker.Start();
+
+            }
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            materialLabel2.Visible = true;
+            pictureBox10.Visible = true;
+            p = Process.GetProcessesByName("Bethesda.net Launcher");
+            if (p.Count() > 0)
+            {
+                MessageBox.Show("We detected that Bethesda Launcher is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Bethesda Launcher for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                }
+                try
+                {
+                    var proc1 = Process.GetProcessesByName("Bethesda.net Launcher");
+
+                    for (int i = 0; i <= proc1.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w in p)
+                    {
+                        w.Kill();
+                        w.WaitForExit();
+                        w.Dispose();
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+
+                CheckForIllegalCrossThreadCalls = false;
+                Thread worker = new Thread(new ThreadStart(() =>
+                {
+                    DeleteFilesBethesda();
+                }));
+                worker.Start();
+            }
+            else
+            {
+                try
+                {
+                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
+                }
+                catch (Exception ex)
+                {
+                }
+
+                CheckForIllegalCrossThreadCalls = false;
+
+
+
+                Thread worker = new Thread(new ThreadStart(() =>
+                {
+                    DeleteFilesBethesda();
+                }));
+                worker.Start();
+
+
+            }
+        }
+        public void DeleteFilesEpic()
+        {
+            try
+            {
+
+                materialLabel3.Text = "Scanning for files...";
+                wait(2);
+                if (Directory.Exists(EGL))
+                    Directory.Delete(EGL, true);
+                materialLabel3.Text = "Stage: 1 of 6";
+                Thread.Sleep(1500);
+                if (Directory.Exists(EGCC))
+                    Directory.Delete(EGCC, true);
+                materialLabel3.Text = "Stage: 2 of 6";
+                if (Directory.Exists(EGWEB))
+                    Directory.Delete(EGWEB, true);
+                materialLabel3.Text = "Stage: 3 of 6";
+
+                try
+                {
+                    materialLabel3.Text = "Stage: 4 of 6";
+                    Thread.Sleep(1000);
+                    // If Directory.Exists(temp1) Then
+                    // Directory.Delete(temp1, True)
+                    // End If
+                    foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp1).GetFiles("*.*"))
+                    {
+                        // If (Now - file.CreationTime).Days > Now Then
+                        try
+                        {
+                            file.Delete();
+                        }
+                        catch
+                        {
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+                materialLabel3.Text = "Stage: 5 of 6";
+                Thread.Sleep(2500);
+                // If Directory.Exists(temp2) Then
+                // Directory.Delete(temp2, True)
+                // End If
+                foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp2).GetFiles("*.*"))
+                {
+                    // If (Now - file.CreationTime).Days > Now Then
+                    try
+                    {
+                        file.Delete();
+                    }
+                    catch
+                    {
+                    }
+                }
+                foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp3).GetFiles("*.*"))
+                {
+                    // If (Now - file.CreationTime).Days > Now Then
+                    try
+                    {
+                        file.Delete();
+                    }
+                    catch
+                    {
+                    }
+                }
+                materialLabel2.Text = "Stage: 6 of 6";
+
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                }
+                Thread.Sleep(5000);
+                p = Process.GetProcessesByName("EpicGamesLauncher");
+                if (p.Count() > 0)
+                {
+                }
+                else
+                {
+                }
+                materialLabel3.Text = "Reset Complete";
+                pictureBox11.Visible = false;
+                materialLabel3.Visible = false;
+                var mess = MessageBox.Show("The reset process is complete! Would you like Reset Client to launch Epic Games for you?", "Launch Epic Games?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (mess == DialogResult.Yes)
+                    System.Diagnostics.Process.Start(EGMain);
+                //Interaction.Shell("Shutdown -r -t 5");
+                else if (File.Exists(EGMain))
+                {
+
+                    Thread.Sleep(5000);
+                    // Application.Exit();
+                }
+                else
+                    MessageBox.Show("We could not find Epic Games!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+        public void DeleteFilesGOG()
+        {
+            try
+            {
+
+                materialLabel4.Text = "Scanning for files...";
+                wait(2);
+                if (Directory.Exists(GOGL))
+                    Directory.Delete(GOGL, true);
+                materialLabel4.Text = "Stage: 1 of 5";
+                Thread.Sleep(1500);
+                if (Directory.Exists(GOGWEB))
+                    Directory.Delete(GOGWEB, true);
+                materialLabel4.Text = "Stage: 2 of 5";
+
+                try
+                {
+                    materialLabel4.Text = "Stage: 3 of 5";
+                    Thread.Sleep(1000);
+                    // If Directory.Exists(temp1) Then
+                    // Directory.Delete(temp1, True)
+                    // End If
+                    foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp1).GetFiles("*.*"))
+                    {
+                        // If (Now - file.CreationTime).Days > Now Then
+                        try
+                        {
+                            file.Delete();
+                        }
+                        catch
+                        {
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+                materialLabel4.Text = "Stage: 4 of 5";
+                Thread.Sleep(2500);
+                // If Directory.Exists(temp2) Then
+                // Directory.Delete(temp2, True)
+                // End If
+                foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp2).GetFiles("*.*"))
+                {
+                    // If (Now - file.CreationTime).Days > Now Then
+                    try
+                    {
+                        file.Delete();
+                    }
+                    catch
+                    {
+                    }
+                }
+                foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp3).GetFiles("*.*"))
+                {
+                    // If (Now - file.CreationTime).Days > Now Then
+                    try
+                    {
+                        file.Delete();
+                    }
+                    catch
+                    {
+                    }
+                }
+                materialLabel4.Text = "Stage: 5 of 5";
+
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                }
+                Thread.Sleep(5000);
+                p = Process.GetProcessesByName("GalaxyClient");
+                if (p.Count() > 0)
+                {
+                }
+                else
+                {
+                }
+                materialLabel4.Text = "Reset Complete";
+                pictureBox12.Visible = false;
+                materialLabel4.Visible = false;
+                var mess = MessageBox.Show("The reset process is complete! Would you like Reset Client to launch GOG Galaxy for you?", "Launch GOG Galaxy?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (mess == DialogResult.Yes)
+                    System.Diagnostics.Process.Start(GOGMain);
+                //Interaction.Shell("Shutdown -r -t 5");
+                else if (File.Exists(GOGMain))
+                {
+
+                    Thread.Sleep(5000);
+                    // Application.Exit();
+                }
+                else
+                    MessageBox.Show("We could not find Bethesda Launcher!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+        public void DeleteFilesBethesda()
+        {
+            try
+            {
+
+                materialLabel2.Text = "Scanning for files...";
+                wait(2);
+                if (Directory.Exists(BL))
+                    Directory.Delete(BL, true);
+                materialLabel2.Text = "Stage: 1 of 5";
+                Thread.Sleep(1500);
+                if (Directory.Exists(BLL))
+                    Directory.Delete(BLL, true);
+                materialLabel2.Text = "Stage: 2 of 5";
+                
+                try
+                {
+                    materialLabel2.Text = "Stage: 3 of 5";
+                    Thread.Sleep(1000);
+                    // If Directory.Exists(temp1) Then
+                    // Directory.Delete(temp1, True)
+                    // End If
+                    foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp1).GetFiles("*.*"))
+                    {
+                        // If (Now - file.CreationTime).Days > Now Then
+                        try
+                        {
+                            file.Delete();
+                        }
+                        catch
+                        {
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+                materialLabel2.Text = "Stage: 4 of 5";
+                Thread.Sleep(2500);
+                // If Directory.Exists(temp2) Then
+                // Directory.Delete(temp2, True)
+                // End If
+                foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp2).GetFiles("*.*"))
+                {
+                    // If (Now - file.CreationTime).Days > Now Then
+                    try
+                    {
+                        file.Delete();
+                    }
+                    catch
+                    {
+                    }
+                }
+                foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp3).GetFiles("*.*"))
+                {
+                    // If (Now - file.CreationTime).Days > Now Then
+                    try
+                    {
+                        file.Delete();
+                    }
+                    catch
+                    {
+                    }
+                }
+                materialLabel2.Text = "Stage: 5 of 5";
+
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                }
+                Thread.Sleep(5000);
+                p = Process.GetProcessesByName("Bethesda.net Launcher");
+                if (p.Count() > 0)
+                {
+                }
+                else
+                {
+                }
+                materialLabel2.Text = "Reset Complete";
+                pictureBox10.Visible = false;
+                materialLabel2.Visible = false;
+                var mess = MessageBox.Show("The reset process is complete! Would you like Reset Client to launch Bethesda Launcher for you?", "Launch Bethesda Launcher?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (mess == DialogResult.Yes)
+                    System.Diagnostics.Process.Start(BMain);
+                //Interaction.Shell("Shutdown -r -t 5");
+                else if (File.Exists(BMain))
+                {
+
+                    Thread.Sleep(5000);
+                    // Application.Exit();
+                }
+                else
+                    MessageBox.Show("We could not find Bethesda Launcher!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+        public void DeleteFilesSteam()
+        {
+            try
+            {
+
+                materialLabel2.Text = "Scanning for files...";
+                wait(2);
+                if (Directory.Exists(SAC))
+                    Directory.Delete(SAC, true);
+                materialLabel6.Text = "Stage: 1 of 7";
+                Thread.Sleep(1500);
+                if (Directory.Exists(SL))
+                    Directory.Delete(SL, true);
+                materialLabel6.Text = "Stage: 2 of 7";
+                Thread.Sleep(1500);
+                if (Directory.Exists(SDC))
+                    Directory.Delete(SDC, true);
+                materialLabel6.Text = "Stage: 3 of 7";
+                Thread.Sleep(1500);
+                if (Directory.Exists(SWEB))
+                    Directory.Delete(SWEB, true);
+                materialLabel6.Text = "Stage: 4 of 7";
+
+                try
+                {
+                    materialLabel6.Text = "Stage: 5 of 7";
+                    Thread.Sleep(1000);
+                    // If Directory.Exists(temp1) Then
+                    // Directory.Delete(temp1, True)
+                    // End If
+                    foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp1).GetFiles("*.*"))
+                    {
+                        // If (Now - file.CreationTime).Days > Now Then
+                        try
+                        {
+                            file.Delete();
+                        }
+                        catch
+                        {
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+                materialLabel6.Text = "Stage: 6 of 7";
+                Thread.Sleep(2500);
+                // If Directory.Exists(temp2) Then
+                // Directory.Delete(temp2, True)
+                // End If
+                foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp2).GetFiles("*.*"))
+                {
+                    // If (Now - file.CreationTime).Days > Now Then
+                    try
+                    {
+                        file.Delete();
+                    }
+                    catch
+                    {
+                    }
+                }
+                foreach (System.IO.FileInfo file in new System.IO.DirectoryInfo(temp3).GetFiles("*.*"))
+                {
+                    // If (Now - file.CreationTime).Days > Now Then
+                    try
+                    {
+                        file.Delete();
+                    }
+                    catch
+                    {
+                    }
+                }
+                materialLabel6.Text = "Stage: 7 of 7";
+
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                }
+                Thread.Sleep(5000);
+                p = Process.GetProcessesByName("Steam");
+                if (p.Count() > 0)
+                {
+                }
+                else
+                {
+                }
+                materialLabel6.Text = "Reset Complete";
+                pictureBox14.Visible = false;
+                materialLabel6.Visible = false;
+                var mess = MessageBox.Show("The reset process is complete! Would you like Reset Client to launch Steam for you?", "Launch Steam?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (mess == DialogResult.Yes)
+                    System.Diagnostics.Process.Start(SMain);
+                //Interaction.Shell("Shutdown -r -t 5");
+                else if (File.Exists(SMain))
+                {
+
+                    Thread.Sleep(5000);
+                    // Application.Exit();
+                }
+                else
+                    MessageBox.Show("We could not find Steam!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
+            materialLabel3.Visible = true;
+            pictureBox11.Visible = true;
+            p = Process.GetProcessesByName("EpicGamesLauncher");
+            if (p.Count() > 0)
+            {
+                MessageBox.Show("We detected that Epic Games is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Epic Games for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                }
+                try
+                {
+                    var proc1 = Process.GetProcessesByName("EpicGamesLauncher");
+
+                    for (int i = 0; i <= proc1.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w in p)
+                    {
+                        w.Kill();
+                        w.WaitForExit();
+                        w.Dispose();
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+
+                CheckForIllegalCrossThreadCalls = false;
+                Thread worker = new Thread(new ThreadStart(() =>
+                {
+                    DeleteFilesEpic();
+                }));
+                worker.Start();
+            }
+            else
+            {
+                try
+                {
+                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
+                }
+                catch (Exception ex)
+                {
+                }
+
+                CheckForIllegalCrossThreadCalls = false;
+
+
+
+                Thread worker = new Thread(new ThreadStart(() =>
+                {
+                    DeleteFilesEpic();
+                }));
+                worker.Start();
+
+
+            }
+        }
+
+        private void materialButton5_Click(object sender, EventArgs e)
+        {
+            materialLabel4.Visible = true;
+            pictureBox12.Visible = true;
+            p = Process.GetProcessesByName("GalaxyClient");
+            if (p.Count() > 0)
+            {
+                MessageBox.Show("We detected that GOG Galaxy is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close GOG Galaxy for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                }
+                try
+                {
+                    var proc1 = Process.GetProcessesByName("GalaxyClient");
+
+                    for (int i = 0; i <= proc1.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w in p)
+                    {
+                        w.Kill();
+                        w.WaitForExit();
+                        w.Dispose();
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+
+                CheckForIllegalCrossThreadCalls = false;
+                Thread worker = new Thread(new ThreadStart(() =>
+                {
+                    DeleteFilesGOG();
+                }));
+                worker.Start();
+            }
+            else
+            {
+                try
+                {
+                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
+                }
+                catch (Exception ex)
+                {
+                }
+
+                CheckForIllegalCrossThreadCalls = false;
+
+
+
+                Thread worker = new Thread(new ThreadStart(() =>
+                {
+                    DeleteFilesGOG();
+                }));
+                worker.Start();
+
+
+            }
+        }
+
+        private void materialButton7_Click(object sender, EventArgs e)
+        {
+            materialLabel6.Visible = true;
+            pictureBox14.Visible = true;
+            p = Process.GetProcessesByName("Steam");
+            if (p.Count() > 0)
+            {
+                MessageBox.Show("We detected that Steam is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Steam for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                try
+                {
+
+                }
+                catch (Exception ex)
+                {
+                }
+                try
+                {
+                    var proc1 = Process.GetProcessesByName("Steam");
+
+                    for (int i = 0; i <= proc1.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w in p)
+                    {
+                        w.Kill();
+                        w.WaitForExit();
+                        w.Dispose();
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+
+                CheckForIllegalCrossThreadCalls = false;
+                Thread worker = new Thread(new ThreadStart(() =>
+                {
+                    DeleteFilesSteam();
+                }));
+                worker.Start();
+            }
+            else
+            {
+                try
+                {
+                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
+                }
+                catch (Exception ex)
+                {
+                }
+
+                CheckForIllegalCrossThreadCalls = false;
+
+
+
+                Thread worker = new Thread(new ThreadStart(() =>
+                {
+                    DeleteFilesSteam();
+                }));
+                worker.Start();
+
 
             }
         }

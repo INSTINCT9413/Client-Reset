@@ -553,6 +553,7 @@ namespace Client_Reset
             this.materialButton3.UseAccentColor = false;
             this.materialButton3.UseCompatibleTextRendering = true;
             this.materialButton3.UseVisualStyleBackColor = true;
+            this.materialButton3.Click += new System.EventHandler(this.materialButton3_Click);
             // 
             // pictureBox2
             // 
@@ -735,6 +736,7 @@ namespace Client_Reset
             this.materialButton4.UseAccentColor = false;
             this.materialButton4.UseCompatibleTextRendering = true;
             this.materialButton4.UseVisualStyleBackColor = true;
+            this.materialButton4.Click += new System.EventHandler(this.materialButton4_Click);
             // 
             // pictureBox3
             // 
@@ -917,6 +919,7 @@ namespace Client_Reset
             this.materialButton5.UseAccentColor = false;
             this.materialButton5.UseCompatibleTextRendering = true;
             this.materialButton5.UseVisualStyleBackColor = true;
+            this.materialButton5.Click += new System.EventHandler(this.materialButton5_Click);
             // 
             // pictureBox4
             // 
@@ -1282,6 +1285,7 @@ namespace Client_Reset
             this.materialButton7.UseAccentColor = false;
             this.materialButton7.UseCompatibleTextRendering = true;
             this.materialButton7.UseVisualStyleBackColor = true;
+            this.materialButton7.Click += new System.EventHandler(this.materialButton7_Click);
             // 
             // pictureBox6
             // 
