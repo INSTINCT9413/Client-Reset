@@ -1516,7 +1516,7 @@ namespace Client_Reset
         {
             try
             {
-
+                
                 materialLabel4.Text = "Scanning for files...";
                 wait(2);
                 if (Directory.Exists(GOGL))
@@ -1910,8 +1910,17 @@ namespace Client_Reset
                 try
                 {
                     var proc1 = Process.GetProcessesByName("GalaxyClient");
-
+                    p = Process.GetProcessesByName("GalaxyClientService");
+                    
                     for (int i = 0; i <= proc1.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w in p)
+                    {
+                        w.Kill();
+                        w.WaitForExit();
+                        w.Dispose();
+                    }
+                    for (int i = 0; i <= p.Count() - 1; i++)
                         proc1[i].CloseMainWindow();
                     foreach (Process w in p)
                     {
