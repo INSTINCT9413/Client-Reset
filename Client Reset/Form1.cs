@@ -198,6 +198,7 @@ namespace Client_Reset
             Thread worker = new Thread(new ThreadStart(() =>
             {
                 LoadSettings();
+                findLaunchers();
             }));
             worker.Start();
            
@@ -331,18 +332,23 @@ namespace Client_Reset
         }
         private void Form1_Shown(object sender, EventArgs e)
         {
-            this.Visible = true;
-            if (Settings.Default.firstTimeRunning == "1")
+            Thread worker = new Thread(new ThreadStart(() =>
             {
-                onboarding ob = new onboarding();
-                ob.ShowDialog(this);
+                this.Visible = true;
+                if (Settings.Default.firstTimeRunning == "1")
+                {
+                    onboarding ob = new onboarding();
+                    ob.ShowDialog(this);
 
-            }
+                }
 
-            findLaunchers();
+                findLaunchers();
 
-            Application.DoEvents();
-            wait(2);
+                Application.DoEvents();
+                wait(2);
+            }));
+            worker.Start();
+            
 
         }
         private void findLaunchers()
@@ -353,6 +359,7 @@ namespace Client_Reset
                 materialButton12.Icon = Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
                 materialButton11.Tag = "0";
                 materialButton12.Tag = "0";
+                materialButton8.Enabled = false;
             }
             else
             {
@@ -360,6 +367,7 @@ namespace Client_Reset
                 materialButton12.Icon = Properties.Resources._3688440_delete_remove_trash_bin_dustbin_icon;
                 materialButton11.Tag = "1";
                 materialButton12.Tag = "1";
+                materialButton8.Enabled = true;
             }
             if (!System.IO.File.Exists(BNMain))
             {
@@ -367,6 +375,7 @@ namespace Client_Reset
                 materialButton13.Icon = Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
                 materialButton14.Tag = "0";
                 materialButton13.Tag = "0";
+                materialButton2.Enabled = false;
             }
             else
             {
@@ -374,6 +383,7 @@ namespace Client_Reset
                 materialButton13.Icon = Properties.Resources._3688440_delete_remove_trash_bin_dustbin_icon;
                 materialButton14.Tag = "1";
                 materialButton13.Tag = "1";
+                materialButton2.Enabled = true;
             }
             if (!System.IO.File.Exists(BMain))
             {
@@ -381,6 +391,7 @@ namespace Client_Reset
                 materialButton15.Icon = Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
                 materialButton16.Tag = "0";
                 materialButton15.Tag = "0";
+                materialButton3.Enabled = false;
             }
             else
             {
@@ -388,6 +399,7 @@ namespace Client_Reset
                 materialButton15.Icon = Properties.Resources._3688440_delete_remove_trash_bin_dustbin_icon;
                 materialButton16.Tag = "1";
                 materialButton15.Tag = "1";
+                materialButton3.Enabled = true;
             }
             if (!System.IO.File.Exists(EGMain))
             {
@@ -395,6 +407,7 @@ namespace Client_Reset
                 materialButton17.Icon = Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
                 materialButton18.Tag = "0";
                 materialButton17.Tag = "0";
+                materialButton4.Enabled = false;
             }
             else
             {
@@ -402,6 +415,7 @@ namespace Client_Reset
                 materialButton17.Icon = Properties.Resources._3688440_delete_remove_trash_bin_dustbin_icon;
                 materialButton18.Tag = "1";
                 materialButton17.Tag = "1";
+                materialButton4.Enabled = true;
             }
             if (!System.IO.File.Exists(GOGMain))
             {
@@ -409,6 +423,7 @@ namespace Client_Reset
                 materialButton19.Icon = Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
                 materialButton20.Tag = "0";
                 materialButton19.Tag = "0";
+                materialButton5.Enabled = false;
             }
             else
             {
@@ -416,6 +431,7 @@ namespace Client_Reset
                 materialButton19.Icon = Properties.Resources._3688440_delete_remove_trash_bin_dustbin_icon;
                 materialButton20.Tag = "1";
                 materialButton19.Tag = "1";
+                materialButton5.Enabled = true;
             }
             if (!System.IO.File.Exists(OMain))
             {
@@ -423,6 +439,7 @@ namespace Client_Reset
                 materialButton21.Icon = Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
                 materialButton22.Tag = "0";
                 materialButton21.Tag = "0";
+                materialButton6.Enabled = false;
             }
             else
             {
@@ -430,6 +447,7 @@ namespace Client_Reset
                 materialButton21.Icon = Properties.Resources._3688440_delete_remove_trash_bin_dustbin_icon;
                 materialButton22.Tag = "1";
                 materialButton21.Tag = "1";
+                materialButton6.Enabled = true;
             }
             if (!System.IO.File.Exists(SMain))
             {
@@ -437,6 +455,7 @@ namespace Client_Reset
                 materialButton23.Icon = Properties.Resources._3688524_arrow_bottom_arrows_direction_down_icon;
                 materialButton24.Tag = "0";
                 materialButton23.Tag = "0";
+                materialButton7.Enabled = false;
             }
             else
             {
@@ -444,6 +463,7 @@ namespace Client_Reset
                 materialButton23.Icon = Properties.Resources._3688440_delete_remove_trash_bin_dustbin_icon;
                 materialButton24.Tag = "1";
                 materialButton23.Tag = "1";
+                materialButton7.Enabled = true;
             }
         }
 
@@ -1516,11 +1536,58 @@ namespace Client_Reset
         {
             try
             {
+                var proc1 = Process.GetProcessesByName("GalaxyClient");
+                var proc2 = Process.GetProcessesByName("GalaxyClientService");
+                var proc3 = Process.GetProcessesByName("GalaxyUpdater");
+                var proc4 = Process.GetProcessesByName("GalaxyCommunication");
+
+                for (int i = 0; i <= proc1.Count() - 1; i++)
+                    proc1[i].CloseMainWindow();
+                foreach (Process w in p)
+                {
+                    w.Kill();
+                    w.WaitForExit();
+                    w.Dispose();
+                }
+                wait(2);
+                for (int i = 0; i <= proc2.Count() - 1; i++)
+                    proc1[i].CloseMainWindow();
+                foreach (Process w2 in p)
+                {
+                    w2.Kill();
+                    w2.WaitForExit();
+                    w2.Dispose();
+                }
+                wait(2);
+                for (int i = 0; i <= proc3.Count() - 1; i++)
+                    proc1[i].CloseMainWindow();
+                foreach (Process w3 in p)
+                {
+                    w3.Kill();
+                    w3.WaitForExit();
+                    w3.Dispose();
+                }
+                wait(2);
+                for (int i = 0; i <= proc4.Count() - 1; i++)
+                    proc1[i].CloseMainWindow();
+                foreach (Process w4 in p)
+                {
+                    w4.Kill();
+                    w4.WaitForExit();
+                    w4.Dispose();
+                }
+                wait(2);
+            }
+            catch
+            { 
+            }
+            try
+            {
                 
                 materialLabel4.Text = "Scanning for files...";
                 wait(2);
-                if (Directory.Exists(GOGL))
-                    Directory.Delete(GOGL, true);
+                //if (Directory.Exists(GOGL))
+                //    Directory.Delete(GOGL, true);
                 materialLabel4.Text = "Stage: 1 of 5";
                 Thread.Sleep(1500);
                 if (Directory.Exists(GOGWEB))
@@ -1856,6 +1923,7 @@ namespace Client_Reset
                         w.WaitForExit();
                         w.Dispose();
                     }
+                    wait(2);
                 }
                 catch (Exception ex)
                 {
@@ -1910,8 +1978,10 @@ namespace Client_Reset
                 try
                 {
                     var proc1 = Process.GetProcessesByName("GalaxyClient");
-                    p = Process.GetProcessesByName("GalaxyClientService");
-                    
+                    var proc2 = Process.GetProcessesByName("GalaxyClientService");
+                    var proc3 = Process.GetProcessesByName("GalaxyUpdater");
+                    var proc4 = Process.GetProcessesByName("GalaxyCommunication");
+
                     for (int i = 0; i <= proc1.Count() - 1; i++)
                         proc1[i].CloseMainWindow();
                     foreach (Process w in p)
@@ -1920,14 +1990,34 @@ namespace Client_Reset
                         w.WaitForExit();
                         w.Dispose();
                     }
-                    for (int i = 0; i <= p.Count() - 1; i++)
+                    wait(2);
+                    for (int i = 0; i <= proc2.Count() - 1; i++)
                         proc1[i].CloseMainWindow();
-                    foreach (Process w in p)
+                    foreach (Process w2 in p)
                     {
-                        w.Kill();
-                        w.WaitForExit();
-                        w.Dispose();
+                        w2.Kill();
+                        w2.WaitForExit();
+                        w2.Dispose();
                     }
+                    wait(2);
+                    for (int i = 0; i <= proc3.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w3 in p)
+                    {
+                        w3.Kill();
+                        w3.WaitForExit();
+                        w3.Dispose();
+                    }
+                    wait(2);
+                    for (int i = 0; i <= proc4.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w4 in p)
+                    {
+                        w4.Kill();
+                        w4.WaitForExit();
+                        w4.Dispose();
+                    }
+                    wait(2);
                 }
                 catch (Exception ex)
                 {
@@ -1944,7 +2034,47 @@ namespace Client_Reset
             {
                 try
                 {
-                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
+                    var proc1 = Process.GetProcessesByName("GalaxyClient");
+                    var proc2 = Process.GetProcessesByName("GalaxyClientService");
+                    var proc3 = Process.GetProcessesByName("GalaxyUpdater");
+                    var proc4 = Process.GetProcessesByName("GalaxyCommunication");
+
+                    for (int i = 0; i <= proc1.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w in p)
+                    {
+                        w.Kill();
+                        w.WaitForExit();
+                        w.Dispose();
+                    }
+                    wait(2);
+                    for (int i = 0; i <= proc2.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w2 in p)
+                    {
+                        w2.Kill();
+                        w2.WaitForExit();
+                        w2.Dispose();
+                    }
+                    wait(2);
+                    for (int i = 0; i <= proc3.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w3 in p)
+                    {
+                        w3.Kill();
+                        w3.WaitForExit();
+                        w3.Dispose();
+                    }
+                    wait(2);
+                    for (int i = 0; i <= proc4.Count() - 1; i++)
+                        proc1[i].CloseMainWindow();
+                    foreach (Process w4 in p)
+                    {
+                        w4.Kill();
+                        w4.WaitForExit();
+                        w4.Dispose();
+                    }
+                    wait(2);
                 }
                 catch (Exception ex)
                 {
