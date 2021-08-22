@@ -1368,7 +1368,7 @@ namespace Client_Reset
         {
             materialLabel2.Visible = true;
             pictureBox10.Visible = true;
-            p = Process.GetProcessesByName("Bethesda.net Launcher");
+            p = Process.GetProcessesByName("BethesdaNetLauncher");
             if (p.Count() > 0)
             {
                 MessageBox.Show("We detected that Bethesda Launcher is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Bethesda Launcher for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
@@ -1381,7 +1381,7 @@ namespace Client_Reset
                 }
                 try
                 {
-                    var proc1 = Process.GetProcessesByName("Bethesda.net Launcher");
+                    var proc1 = Process.GetProcessesByName("BethesdaNetLauncher");
 
                     for (int i = 0; i <= proc1.Count() - 1; i++)
                         proc1[i].CloseMainWindow();
@@ -1674,7 +1674,7 @@ namespace Client_Reset
                     // Application.Exit();
                 }
                 else
-                    MessageBox.Show("We could not find Bethesda Launcher!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show("We could not find GOG Galaxy!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 
             }
             catch (Exception ex)
@@ -1756,7 +1756,7 @@ namespace Client_Reset
                 {
                 }
                 Thread.Sleep(5000);
-                p = Process.GetProcessesByName("Bethesda.net Launcher");
+                p = Process.GetProcessesByName("BethesdaNetLauncher");
                 if (p.Count() > 0)
                 {
                 }
