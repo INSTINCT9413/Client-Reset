@@ -171,7 +171,7 @@ namespace Client_Reset
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-
+            
 
         }
         private void WSClean()
@@ -195,26 +195,25 @@ namespace Client_Reset
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Thread worker = new Thread(new ThreadStart(() =>
-            {
+            
                 LoadSettings();
                 findLaunchers();
-            }));
-            worker.Start();
+            
            
 
         }
         public void LoadSettings()
         {
-            if (Settings.Default.acceptedLicnese == null || Settings.Default.acceptedLicnese == "No")
+            if (Properties.Settings.Default.settingsmUpgrade)
             {
-                CheckForIllegalCrossThreadCalls = false;
-                //this.Hide();
-                //this.Visible = false;
-                Legal LD = new Legal();
-                LD.StartPosition = FormStartPosition.CenterScreen;
-                LD.Show();
+                Object PrevVersion = Properties.Settings.Default.GetPreviousVersion("upgrade");
+                if (PrevVersion != null)
+                {
 
+                    Properties.Settings.Default.Upgrade();
+                    Properties.Settings.Default.settingsmUpgrade = false;
+                    Properties.Settings.Default.Save();
+                }
             }
 
             if (Settings.Default.themeMode == "Light")
@@ -285,7 +284,7 @@ namespace Client_Reset
 
             }
 
-            this.Text = "Client Reset Tool - By: INSTINCT";
+            this.Text = "Client Reset Tool";
 
             Graphics g = Graphics.FromHwnd(IntPtr.Zero);
             IntPtr desktop = g.GetHdc();
@@ -332,8 +331,7 @@ namespace Client_Reset
         }
         private void Form1_Shown(object sender, EventArgs e)
         {
-            Thread worker = new Thread(new ThreadStart(() =>
-            {
+            
                 this.Visible = true;
                 if (Settings.Default.firstTimeRunning == "1")
                 {
@@ -346,8 +344,6 @@ namespace Client_Reset
 
                 Application.DoEvents();
                 wait(2);
-            }));
-            worker.Start();
             
 
         }
@@ -580,7 +576,7 @@ namespace Client_Reset
                     }
                     catch (Exception ex)
                     {
-                        //this program may not have a name property, so an exception will be thrown
+                        MessageBox.Show(ex.Message, "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                     }
                 }
 
@@ -590,6 +586,7 @@ namespace Client_Reset
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message, "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return false;
             }
         }
@@ -835,13 +832,7 @@ namespace Client_Reset
             if (p.Count() > 0)
             {
                 MessageBox.Show("We detected that Origin is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Origin for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+                
                 try
                 {
                     var proc1 = Process.GetProcessesByName("Origin");
@@ -857,6 +848,7 @@ namespace Client_Reset
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show(ex.Message, "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
 
                 CheckForIllegalCrossThreadCalls = false;
@@ -868,13 +860,7 @@ namespace Client_Reset
             }
             else
             {
-                try
-                {
-                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
-                }
-                catch (Exception ex)
-                {
-                }
+                
 
                 CheckForIllegalCrossThreadCalls = false;
 
@@ -944,7 +930,7 @@ namespace Client_Reset
                 }
             }
         }
-        catch (Exception ex)
+        catch
         {
         }
         materialLabel5.Text = "Stage: 9 of 17";
@@ -1003,13 +989,7 @@ namespace Client_Reset
         if (Directory.Exists(origin))
             Directory.Delete(origin, true);
         materialLabel5.Text = "Stage: 17 of 17";
-        try
-        {
-            
-        }
-        catch (Exception ex)
-        {
-        }
+        
         Thread.Sleep(5000);
         p = Process.GetProcessesByName("Origin");
         if (p.Count() > 0)
@@ -1091,13 +1071,7 @@ namespace Client_Reset
                     }
                 }
                 materialLabel1.Text = "Stage: 6 of 6";
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+                
                 Thread.Sleep(5000);
                 p = Process.GetProcessesByName("Battle.net");
                 if (p.Count() > 0)
@@ -1170,7 +1144,7 @@ namespace Client_Reset
                         }
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
                 materialLabel7.Text = "Stage: 6 of 7";
@@ -1202,13 +1176,7 @@ namespace Client_Reset
                 }
                 materialLabel7.Text = "Stage: 7 of 7";
                 
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+                
                 Thread.Sleep(5000);
                 p = Process.GetProcessesByName("Ubisoft Connect");
                 if (p.Count() > 0)
@@ -1247,13 +1215,7 @@ namespace Client_Reset
             if (p.Count() > 0)
             {
                 MessageBox.Show("We detected that Battle.Net is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Battle.Net for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+                
                 try
                 {
                     var proc1 = Process.GetProcessesByName("Battle.net");
@@ -1267,7 +1229,7 @@ namespace Client_Reset
                         w.Dispose();
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
                 }
 
@@ -1280,13 +1242,7 @@ namespace Client_Reset
             }
             else
             {
-                try
-                {
-                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
-                }
-                catch (Exception ex)
-                {
-                }
+                
 
                 CheckForIllegalCrossThreadCalls = false;
 
@@ -1310,13 +1266,7 @@ namespace Client_Reset
             if (p.Count() > 0)
             {
                 MessageBox.Show("We detected that Ubisoft Connect is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Ubisoft Connect for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+                
                 try
                 {
                     var proc1 = Process.GetProcessesByName("Ubisoft Connect");
@@ -1330,7 +1280,7 @@ namespace Client_Reset
                         w.Dispose();
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
 
@@ -1343,13 +1293,7 @@ namespace Client_Reset
             }
             else
             {
-                try
-                {
-                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
-                }
-                catch (Exception ex)
-                {
-                }
+                
 
                 CheckForIllegalCrossThreadCalls = false;
 
@@ -1372,13 +1316,7 @@ namespace Client_Reset
             if (p.Count() > 0)
             {
                 MessageBox.Show("We detected that Bethesda Launcher is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Bethesda Launcher for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+              
                 try
                 {
                     var proc1 = Process.GetProcessesByName("BethesdaNetLauncher");
@@ -1392,7 +1330,7 @@ namespace Client_Reset
                         w.Dispose();
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
 
@@ -1405,13 +1343,7 @@ namespace Client_Reset
             }
             else
             {
-                try
-                {
-                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
-                }
-                catch (Exception ex)
-                {
-                }
+               
 
                 CheckForIllegalCrossThreadCalls = false;
 
@@ -1463,7 +1395,7 @@ namespace Client_Reset
                         }
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
                 materialLabel3.Text = "Stage: 5 of 6";
@@ -1495,13 +1427,7 @@ namespace Client_Reset
                 }
                 materialLabel2.Text = "Stage: 6 of 6";
 
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+                
                 Thread.Sleep(5000);
                 p = Process.GetProcessesByName("EpicGamesLauncher");
                 if (p.Count() > 0)
@@ -1613,7 +1539,7 @@ namespace Client_Reset
                         }
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
                 materialLabel4.Text = "Stage: 4 of 5";
@@ -1645,13 +1571,7 @@ namespace Client_Reset
                 }
                 materialLabel4.Text = "Stage: 5 of 5";
 
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+               
                 Thread.Sleep(5000);
                 p = Process.GetProcessesByName("GalaxyClient");
                 if (p.Count() > 0)
@@ -1716,7 +1636,7 @@ namespace Client_Reset
                         }
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
                 materialLabel2.Text = "Stage: 4 of 5";
@@ -1748,13 +1668,7 @@ namespace Client_Reset
                 }
                 materialLabel2.Text = "Stage: 5 of 5";
 
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+               
                 Thread.Sleep(5000);
                 p = Process.GetProcessesByName("BethesdaNetLauncher");
                 if (p.Count() > 0)
@@ -1827,7 +1741,7 @@ namespace Client_Reset
                         }
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
                 materialLabel6.Text = "Stage: 6 of 7";
@@ -1859,13 +1773,7 @@ namespace Client_Reset
                 }
                 materialLabel6.Text = "Stage: 7 of 7";
 
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+                
                 Thread.Sleep(5000);
                 p = Process.GetProcessesByName("Steam");
                 if (p.Count() > 0)
@@ -1904,13 +1812,7 @@ namespace Client_Reset
             if (p.Count() > 0)
             {
                 MessageBox.Show("We detected that Epic Games is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Epic Games for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+                
                 try
                 {
                     var proc1 = Process.GetProcessesByName("EpicGamesLauncher");
@@ -1925,7 +1827,7 @@ namespace Client_Reset
                     }
                     wait(2);
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
 
@@ -1938,13 +1840,7 @@ namespace Client_Reset
             }
             else
             {
-                try
-                {
-                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
-                }
-                catch (Exception ex)
-                {
-                }
+               
 
                 CheckForIllegalCrossThreadCalls = false;
 
@@ -1968,13 +1864,7 @@ namespace Client_Reset
             if (p.Count() > 0)
             {
                 MessageBox.Show("We detected that GOG Galaxy is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close GOG Galaxy for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+                
                 try
                 {
                     var proc1 = Process.GetProcessesByName("GalaxyClient");
@@ -2019,7 +1909,7 @@ namespace Client_Reset
                     }
                     wait(2);
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
 
@@ -2076,7 +1966,7 @@ namespace Client_Reset
                     }
                     wait(2);
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
 
@@ -2102,13 +1992,7 @@ namespace Client_Reset
             if (p.Count() > 0)
             {
                 MessageBox.Show("We detected that Steam is still open and we can't continue with the reset!" + Constants.vbNewLine + "We will try and close Steam for you!", "Can't Continue", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                try
-                {
-
-                }
-                catch (Exception ex)
-                {
-                }
+               
                 try
                 {
                     var proc1 = Process.GetProcessesByName("Steam");
@@ -2122,7 +2006,7 @@ namespace Client_Reset
                         w.Dispose();
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
                 }
 
@@ -2135,13 +2019,7 @@ namespace Client_Reset
             }
             else
             {
-                try
-                {
-                    //Process.GetProcessesByName("OriginWebHelperService")(0).Kill();
-                }
-                catch (Exception ex)
-                {
-                }
+                
 
                 CheckForIllegalCrossThreadCalls = false;
 

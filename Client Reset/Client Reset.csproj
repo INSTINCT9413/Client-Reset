@@ -38,7 +38,8 @@
     <ApplicationIcon>3688457_refresh_sync_map_reload_rotate_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Client_Reset.Program</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -48,7 +49,8 @@
       <HintPath>E:\Users\jacob\Documents\Visual Studio 2015\1 DLLs\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="MaterialSkin, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.2.2.2.1\lib\net461\MaterialSkin.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.902.49, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
@@ -190,6 +192,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="3688457_refresh_sync_map_reload_rotate_icon.ico" />
+    <None Include="Resources\Capture1.PNG" />
     <None Include="Resources\3688527_down_chevron_angle_bottom_align_icon.png" />
     <None Include="Resources\3688526_angle_left_chevron_icon.png" />
     <None Include="Resources\3688525_align_angle_chevron_top_html tag_icon.png" />

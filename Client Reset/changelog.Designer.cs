@@ -38,9 +38,9 @@ namespace Client_Reset
             this.webView21.CreationProperties = null;
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
             this.webView21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webView21.Location = new System.Drawing.Point(3, 24);
+            this.webView21.Location = new System.Drawing.Point(3, 64);
             this.webView21.Name = "webView21";
-            this.webView21.Size = new System.Drawing.Size(584, 423);
+            this.webView21.Size = new System.Drawing.Size(639, 408);
             this.webView21.Source = new System.Uri("https://jacobbrookhouse.me/downloads/server2/product/clientreset/data/changelog.h" +
         "tml", System.UriKind.Absolute);
             this.webView21.TabIndex = 0;
@@ -50,11 +50,9 @@ namespace Client_Reset
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 450);
+            this.ClientSize = new System.Drawing.Size(645, 475);
             this.Controls.Add(this.webView21);
-            this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_None;
             this.Name = "changelog";
-            this.Padding = new System.Windows.Forms.Padding(3, 24, 3, 3);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client Reset - Changelog";
             this.Load += new System.EventHandler(this.changelog_Load);

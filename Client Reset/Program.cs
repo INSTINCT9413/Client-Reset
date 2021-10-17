@@ -8,7 +8,8 @@ namespace Client_Reset
 {
     static class Program
     {
-        public static Form1 form1; // = new Form1();
+        public static Form1 form1; 
+        //public static Legal legal;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

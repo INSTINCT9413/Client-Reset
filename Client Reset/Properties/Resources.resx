@@ -130,6 +130,9 @@
   <data name="3688503_close_cross_delete_remove_bin_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3688503_close_cross_delete_remove_bin_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3688527_down_chevron_angle_bottom_align_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3688527_down_chevron_angle_bottom_align_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Capture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Capture.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,6 +151,9 @@
   <data name="Steam_icon_logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Steam_icon_logo.svg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3688521_arrows_direction_download_pointer_up_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3688521_arrows_direction_download_pointer_up_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4572454-middle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4572454-middle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,8 +169,14 @@
   <data name="_3688440_delete_remove_trash_bin_dustbin_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3688440_delete_remove_trash_bin_dustbin_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3688524_arrow_bottom_arrows_direction_down_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3688524_arrow_bottom_arrows_direction_down_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Epic+Games+Node_xlarge_whitetext_blackback_epiclogo_504x512_1529964470588-503x512-ac795e81c54b27aaa2e196456dd307bfe4ca3ca4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Epic+Games+Node_xlarge_whitetext_blackback_epiclogo_504x512_1529964470588-503x512-ac795e81c54b27aaa2e196456dd307bfe4ca3ca4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3688526_angle_left_chevron_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3688526_angle_left_chevron_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-transparent-diablo-iii-battle-net-destiny-2-world-of-warcraft-battlefield-blue-logo-teal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-diablo-iii-battle-net-destiny-2-world-of-warcraft-battlefield-blue-logo-teal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,11 +184,17 @@
   <data name="png-transparent-diablo-iii-battle-net-destiny-2-world-of-warcraft-battlefield-blue-logo-teal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-diablo-iii-battle-net-destiny-2-world-of-warcraft-battlefield-blue-logo-teal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3688523_arrow_left_arrows_direction_down_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3688523_arrow_left_arrows_direction_down_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3688524_arrow_bottom_arrows_direction_down_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3688524_arrow_bottom_arrows_direction_down_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3688431_api_config_configuration_machine_wrench_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3688431_api_config_configuration_machine_wrench_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="png-transparent-blue-logo-battle-net-computer-icons-blizzard-entertainment-video-game-world-of-warcraft-jainism-game-leaf-text" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\png-transparent-blue-logo-battle-net-computer-icons-blizzard-entertainment-video-game-world-of-warcraft-jainism-game-leaf-text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -186,9 +204,6 @@
   </data>
   <data name="1200px-Microsoft_Store_app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1200px-Microsoft_Store_app_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Origin-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Origin-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Steam_icon_logo.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Steam_icon_logo.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,28 +229,16 @@
   <data name="1200px-Microsoft_Store_app_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1200px-Microsoft_Store_app_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unnamed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Origin-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Origin-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3688454_find_lens_search_magnifier_magnifying_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3688454_find_lens_search_magnifier_magnifying_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3688521_arrows_direction_download_pointer_up_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3688521_arrows_direction_download_pointer_up_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3688523_arrow_left_arrows_direction_down_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3688523_arrow_left_arrows_direction_down_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3688524_arrow_bottom_arrows_direction_down_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3688524_arrow_bottom_arrows_direction_down_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="3688525_align_angle_chevron_top_html tag_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3688525_align_angle_chevron_top_html tag_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3688526_angle_left_chevron_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3688526_angle_left_chevron_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3688527_down_chevron_angle_bottom_align_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3688527_down_chevron_angle_bottom_align_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Capture1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

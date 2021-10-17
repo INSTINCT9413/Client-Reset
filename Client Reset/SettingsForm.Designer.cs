@@ -34,6 +34,8 @@ namespace Client_Reset
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.materialComboBox2 = new MaterialSkin.Controls.MaterialComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,8 +55,6 @@ namespace Client_Reset
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.materialComboBox2 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.materialCard1.SuspendLayout();
@@ -70,7 +70,7 @@ namespace Client_Reset
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
             this.materialTabSelector1.Depth = 0;
             this.materialTabSelector1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTabSelector1.Location = new System.Drawing.Point(-2, 21);
+            this.materialTabSelector1.Location = new System.Drawing.Point(-2, 39);
             this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabSelector1.Name = "materialTabSelector1";
@@ -84,13 +84,13 @@ namespace Client_Reset
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(4, 44);
+            this.materialTabControl1.Location = new System.Drawing.Point(4, 56);
             this.materialTabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(533, 431);
+            this.materialTabControl1.Size = new System.Drawing.Size(533, 419);
             this.materialTabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -101,7 +101,7 @@ namespace Client_Reset
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(525, 405);
+            this.tabPage1.Size = new System.Drawing.Size(525, 393);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
             // 
@@ -118,13 +118,58 @@ namespace Client_Reset
             this.materialCard1.Controls.Add(this.materialCheckbox1);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(16, 14);
+            this.materialCard1.Location = new System.Drawing.Point(38, 42);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(495, 391);
+            this.materialCard1.Size = new System.Drawing.Size(448, 342);
             this.materialCard1.TabIndex = 0;
+            // 
+            // materialComboBox2
+            // 
+            this.materialComboBox2.AutoResize = false;
+            this.materialComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialComboBox2.Depth = 0;
+            this.materialComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.materialComboBox2.DropDownHeight = 174;
+            this.materialComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.materialComboBox2.DropDownWidth = 121;
+            this.materialComboBox2.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialComboBox2.FormattingEnabled = true;
+            this.materialComboBox2.Hint = "Selected tab on start-up";
+            this.materialComboBox2.IntegralHeight = false;
+            this.materialComboBox2.ItemHeight = 43;
+            this.materialComboBox2.Items.AddRange(new object[] {
+            "Battle.Net",
+            "Bethesda Launcher",
+            "Epic Games",
+            "GOG Galaxy",
+            "Origin",
+            "Steam",
+            "Ubisoft",
+            "Windows Store"});
+            this.materialComboBox2.Location = new System.Drawing.Point(248, 61);
+            this.materialComboBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.materialComboBox2.MaxDropDownItems = 4;
+            this.materialComboBox2.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialComboBox2.Name = "materialComboBox2";
+            this.materialComboBox2.Size = new System.Drawing.Size(190, 49);
+            this.materialComboBox2.StartIndex = 0;
+            this.materialComboBox2.TabIndex = 9;
+            this.materialComboBox2.SelectedIndexChanged += new System.EventHandler(this.materialComboBox2_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(241, 22);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 37);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Defaults";
             // 
             // materialComboBox1
             // 
@@ -148,7 +193,7 @@ namespace Client_Reset
             "Green",
             "Blue",
             "Purple"});
-            this.materialComboBox1.Location = new System.Drawing.Point(15, 46);
+            this.materialComboBox1.Location = new System.Drawing.Point(18, 61);
             this.materialComboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.materialComboBox1.MaxDropDownItems = 4;
             this.materialComboBox1.MouseState = MaterialSkin.MouseState.OUT;
@@ -162,7 +207,7 @@ namespace Client_Reset
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 207);
+            this.label2.Location = new System.Drawing.Point(11, 222);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 37);
@@ -173,7 +218,7 @@ namespace Client_Reset
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 7);
+            this.label1.Location = new System.Drawing.Point(11, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(199, 37);
@@ -185,7 +230,7 @@ namespace Client_Reset
             this.materialCheckbox2.Checked = true;
             this.materialCheckbox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.materialCheckbox2.Depth = 0;
-            this.materialCheckbox2.Location = new System.Drawing.Point(14, 276);
+            this.materialCheckbox2.Location = new System.Drawing.Point(17, 291);
             this.materialCheckbox2.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckbox2.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckbox2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -204,7 +249,7 @@ namespace Client_Reset
             this.materialSwitch1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.materialSwitch1.Depth = 0;
             this.materialSwitch1.Enabled = false;
-            this.materialSwitch1.Location = new System.Drawing.Point(15, 97);
+            this.materialSwitch1.Location = new System.Drawing.Point(18, 112);
             this.materialSwitch1.Margin = new System.Windows.Forms.Padding(0);
             this.materialSwitch1.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialSwitch1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -219,7 +264,7 @@ namespace Client_Reset
             // materialCheckbox1
             // 
             this.materialCheckbox1.Depth = 0;
-            this.materialCheckbox1.Location = new System.Drawing.Point(14, 242);
+            this.materialCheckbox1.Location = new System.Drawing.Point(17, 257);
             this.materialCheckbox1.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckbox1.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialCheckbox1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -239,7 +284,7 @@ namespace Client_Reset
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(525, 405);
+            this.tabPage2.Size = new System.Drawing.Size(525, 393);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Advanced";
             // 
@@ -249,22 +294,22 @@ namespace Client_Reset
             this.materialCard2.Controls.Add(this.materialLabel2);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(15, 14);
+            this.materialCard2.Location = new System.Drawing.Point(38, 41);
             this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
             this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard2.Size = new System.Drawing.Size(495, 391);
+            this.materialCard2.Size = new System.Drawing.Size(448, 342);
             this.materialCard2.TabIndex = 1;
             // 
             // materialLabel2
             // 
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(191, 169);
+            this.materialLabel2.Location = new System.Drawing.Point(175, 180);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(151, 23);
+            this.materialLabel2.Size = new System.Drawing.Size(99, 23);
             this.materialLabel2.TabIndex = 1;
             this.materialLabel2.Text = "Coming Soon";
             // 
@@ -275,7 +320,7 @@ namespace Client_Reset
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(525, 405);
+            this.tabPage3.Size = new System.Drawing.Size(525, 393);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "About";
             // 
@@ -290,12 +335,12 @@ namespace Client_Reset
             this.materialCard3.Controls.Add(this.pictureBox1);
             this.materialCard3.Depth = 0;
             this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(15, 14);
+            this.materialCard3.Location = new System.Drawing.Point(38, 42);
             this.materialCard3.Margin = new System.Windows.Forms.Padding(14);
             this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard3.Name = "materialCard3";
             this.materialCard3.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard3.Size = new System.Drawing.Size(495, 391);
+            this.materialCard3.Size = new System.Drawing.Size(448, 342);
             this.materialCard3.TabIndex = 1;
             // 
             // materialButton4
@@ -307,7 +352,7 @@ namespace Client_Reset
             this.materialButton4.Depth = 0;
             this.materialButton4.HighEmphasis = true;
             this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(170, 247);
+            this.materialButton4.Location = new System.Drawing.Point(145, 223);
             this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton4.Name = "materialButton4";
@@ -328,7 +373,7 @@ namespace Client_Reset
             this.materialButton3.Depth = 0;
             this.materialButton3.HighEmphasis = true;
             this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(170, 335);
+            this.materialButton3.Location = new System.Drawing.Point(145, 274);
             this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
@@ -349,7 +394,7 @@ namespace Client_Reset
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(170, 199);
+            this.materialButton2.Location = new System.Drawing.Point(145, 182);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
@@ -365,7 +410,7 @@ namespace Client_Reset
             // 
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(194, 170);
+            this.materialLabel4.Location = new System.Drawing.Point(173, 158);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(103, 23);
@@ -377,7 +422,7 @@ namespace Client_Reset
             // 
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(194, 147);
+            this.materialLabel3.Location = new System.Drawing.Point(173, 135);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(103, 23);
@@ -388,7 +433,7 @@ namespace Client_Reset
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Client_Reset.Properties.Resources._3688457_refresh_sync_map_reload_rotate_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(197, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(176, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -422,51 +467,6 @@ namespace Client_Reset
             this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(274, 7);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 37);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Defaults";
-            // 
-            // materialComboBox2
-            // 
-            this.materialComboBox2.AutoResize = false;
-            this.materialComboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialComboBox2.Depth = 0;
-            this.materialComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.materialComboBox2.DropDownHeight = 174;
-            this.materialComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.materialComboBox2.DropDownWidth = 121;
-            this.materialComboBox2.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialComboBox2.FormattingEnabled = true;
-            this.materialComboBox2.Hint = "Selected tab on start-up";
-            this.materialComboBox2.IntegralHeight = false;
-            this.materialComboBox2.ItemHeight = 43;
-            this.materialComboBox2.Items.AddRange(new object[] {
-            "Battle.Net",
-            "Bethesda Launcher",
-            "Epic Games",
-            "GOG Galaxy",
-            "Origin",
-            "Steam",
-            "Ubisoft",
-            "Windows Store"});
-            this.materialComboBox2.Location = new System.Drawing.Point(281, 46);
-            this.materialComboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.materialComboBox2.MaxDropDownItems = 4;
-            this.materialComboBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialComboBox2.Name = "materialComboBox2";
-            this.materialComboBox2.Size = new System.Drawing.Size(190, 49);
-            this.materialComboBox2.StartIndex = 0;
-            this.materialComboBox2.TabIndex = 9;
-            this.materialComboBox2.SelectedIndexChanged += new System.EventHandler(this.materialComboBox2_SelectedIndexChanged);
-            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,11 +476,11 @@ namespace Client_Reset
             this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
-            this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_None;
+            this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_40;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "SettingsForm";
-            this.Padding = new System.Windows.Forms.Padding(2, 16, 2, 2);
+            this.Padding = new System.Windows.Forms.Padding(3, 40, 2, 2);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Client Reset - Settings";
             this.Load += new System.EventHandler(this.SettingsForm_Load);

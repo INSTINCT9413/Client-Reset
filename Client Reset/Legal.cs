@@ -17,11 +17,19 @@ namespace Client_Reset
 {
     public partial class Legal : MaterialForm
     {
+
         public Legal()
         {
             InitializeComponent();
         }
-
+        private void wait(int seconds)
+        {
+            for (int i = 0; i <= seconds * 100; i++)
+            {
+                System.Threading.Thread.Sleep(10);
+                Application.DoEvents();
+            }
+        }
         private void materialButton1_Click(object sender, EventArgs e)
         {
             Settings.Default.acceptedEULA = "Yes";
@@ -42,5 +50,7 @@ namespace Client_Reset
             System.Diagnostics.Process.Start(Application.StartupPath + @"\Client Reset.exe");
             Application.Exit();
         }
+
+        
     }
 }

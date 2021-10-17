@@ -283,6 +283,16 @@ namespace Client_Reset.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Capture1 {
+            get {
+                object obj = ResourceManager.GetObject("Capture1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Epic_Games_Node_xlarge_whitetext_blackback_epiclogo_504x512_1529964470588_503x512_ac795e81c54b27aaa2e196456dd307bfe4ca3ca4 {
             get {
                 object obj = ResourceManager.GetObject("Epic+Games+Node_xlarge_whitetext_blackback_epiclogo_504x512_1529964470588-503x512" +

@@ -181,6 +181,9 @@ namespace Client_Reset
             // 
             // materialTabControl1
             // 
+            this.materialTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tabPage3);
@@ -190,14 +193,13 @@ namespace Client_Reset
             this.materialTabControl1.Controls.Add(this.tabPage7);
             this.materialTabControl1.Controls.Add(this.tabPage8);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.Location = new System.Drawing.Point(2, 57);
             this.materialTabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(596, 490);
+            this.materialTabControl1.Size = new System.Drawing.Size(597, 490);
             this.materialTabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -207,7 +209,7 @@ namespace Client_Reset
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(588, 464);
+            this.tabPage1.Size = new System.Drawing.Size(589, 464);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Battle.net";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -390,7 +392,7 @@ namespace Client_Reset
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(588, 464);
+            this.tabPage2.Size = new System.Drawing.Size(589, 464);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bethesda Launcher";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -573,7 +575,7 @@ namespace Client_Reset
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(588, 464);
+            this.tabPage3.Size = new System.Drawing.Size(589, 464);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Epic Games";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -756,7 +758,7 @@ namespace Client_Reset
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage4.Size = new System.Drawing.Size(588, 464);
+            this.tabPage4.Size = new System.Drawing.Size(589, 464);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "GOG Galaxy";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -939,7 +941,7 @@ namespace Client_Reset
             this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Size = new System.Drawing.Size(588, 464);
+            this.tabPage5.Size = new System.Drawing.Size(589, 464);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Origin";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1122,7 +1124,7 @@ namespace Client_Reset
             this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage6.Size = new System.Drawing.Size(588, 464);
+            this.tabPage6.Size = new System.Drawing.Size(589, 464);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Steam";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1305,7 +1307,7 @@ namespace Client_Reset
             this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage7.Size = new System.Drawing.Size(588, 464);
+            this.tabPage7.Size = new System.Drawing.Size(589, 464);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Ubisoft Connect";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1488,7 +1490,7 @@ namespace Client_Reset
             this.tabPage8.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage8.Size = new System.Drawing.Size(588, 464);
+            this.tabPage8.Size = new System.Drawing.Size(589, 464);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Windows Store";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1609,13 +1611,13 @@ namespace Client_Reset
             this.materialButton10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.materialButton10.AutoSize = false;
             this.materialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton10.BackColor = System.Drawing.Color.Transparent;
+            this.materialButton10.BackColor = System.Drawing.Color.Maroon;
             this.materialButton10.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.materialButton10.Depth = 0;
             this.materialButton10.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialButton10.HighEmphasis = true;
             this.materialButton10.Icon = null;
-            this.materialButton10.Location = new System.Drawing.Point(418, -7);
+            this.materialButton10.Location = new System.Drawing.Point(347, -7);
             this.materialButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.materialButton10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton10.Name = "materialButton10";
@@ -1623,9 +1625,9 @@ namespace Client_Reset
             this.materialButton10.TabIndex = 4;
             this.materialButton10.Text = "Reset All";
             this.materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton10.UseAccentColor = true;
+            this.materialButton10.UseAccentColor = false;
             this.materialButton10.UseCompatibleTextRendering = true;
-            this.materialButton10.UseVisualStyleBackColor = true;
+            this.materialButton10.UseVisualStyleBackColor = false;
             this.materialButton10.Visible = false;
             // 
             // timer1
@@ -1639,14 +1641,14 @@ namespace Client_Reset
             this.materialButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.materialButton1.AutoSize = false;
             this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.BackColor = System.Drawing.Color.Transparent;
+            this.materialButton1.BackColor = System.Drawing.Color.Maroon;
             this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.materialButton1.Depth = 0;
             this.materialButton1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
             this.materialButton1.Image = global::Client_Reset.Properties.Resources._3688431_api_config_configuration_machine_wrench_icon;
-            this.materialButton1.Location = new System.Drawing.Point(509, -7);
+            this.materialButton1.Location = new System.Drawing.Point(438, -7);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
@@ -1654,9 +1656,9 @@ namespace Client_Reset
             this.materialButton1.TabIndex = 0;
             this.materialButton1.Text = "Settings";
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton1.UseAccentColor = true;
+            this.materialButton1.UseAccentColor = false;
             this.materialButton1.UseCompatibleTextRendering = true;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.UseVisualStyleBackColor = false;
             this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // timer2
